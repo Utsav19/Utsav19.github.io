@@ -28,13 +28,19 @@
         /* Announcement Container */
         .announcement {
             background-color: #ffffe0; /* Light yellow background */
-            border-left: 6px solid #ffbf00; /* Bright yellow left border */
-            padding: 15px 20px;
-            margin: 20px auto;
-            border-radius: 4px;
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-            max-width: 600px; /* Adjust as needed */
+            /* border-left: 6px solid #ffbf00; Bright yellow left border */
+            /* padding: 15px 20px; */
+            /* margin: 20px auto; */
+            /* border-radius: 4px; */
+            /* box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); */
+            max-width: 800px; /* Adjust as needed */
         }
+		/* add annoucement symbol */
+		.announcement::before {
+			content: "📢";
+			font-size: 1.5em;
+			margin-right: 10px;
+		}
 
         /* Announcement Link Styling */
         .announcement a {
