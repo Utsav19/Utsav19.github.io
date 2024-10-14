@@ -1,4 +1,4 @@
-<!DOCTYPE HTML>
+<!-- <!DOCTYPE HTML>
 <html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 
 	<title>Utsav Sadana</title>
@@ -8,8 +8,64 @@
 
 	<link rel="stylesheet" type="text/css" href="stylesheet.css">
 	<link rel="icon" type="image/png" href="images/seal_icon.png">
-</head>
+</head> -->
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 
+    <title>Utsav Sadana</title>
+
+    <meta name="author" content="Utsav Sadana">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" type="text/css" href="stylesheet.css">
+    <link rel="icon" type="image/png" href="images/seal_icon.png">
+
+    <!-- Inline CSS for Announcement Styling -->
+    <style>
+        /* Announcement Container */
+        .announcement {
+            background-color: #ffe6e6; /* Light red background */
+            border-left: 6px solid #ff4d4d; /* Red left border */
+            padding: 15px 20px;
+            margin: 20px auto;
+            border-radius: 4px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            max-width: 800px; /* Adjust as needed */
+        }
+
+        /* Announcement Link Styling */
+        .announcement a {
+            color: #cc0000; /* Dark red for links */
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 1.2em;
+        }
+
+        .announcement a:hover {
+            text-decoration: underline;
+        }
+
+        /* Save the Date Styling */
+        .announcement .save-date {
+            display: block;
+            margin-top: 10px;
+            font-size: 1.1em;
+            color: #990000; /* Even darker red for emphasis */
+        }
+
+        /* Optional: Center the announcement */
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            min-height: 100vh;
+            background-color: #f9f9f9; /* Light background for contrast */
+        }
+    </style>
+</head>
 <body>
 	<table style="width:100%;max-width:800px;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
 		<tr style="padding:0px">
@@ -75,7 +131,11 @@
 						<td style="padding:20px;width:100%;vertical-align:middle">
 							<heading>News</heading>
 							<ul>
-								<li> <a href="https://www.crmath.ca/activites/#/type/activity/id/3992">CRM Workshop: Combinatorial Optimization and Data Science</a>. Save the Date! </li>
+								<li><div class="announcement">
+									<a href="https://www.crmath.ca/activites/#/type/activity/id/3992">CRM Workshop: Combinatorial Optimization and Data Science</a>
+									<span class="save-date">Save the Date!</span>
+								</div></li>
+									<!-- <a href="https://www.crmath.ca/activites/#/type/activity/id/3992">CRM Workshop: Combinatorial Optimization and Data Science</a>. Save the Date! </li> -->
 								<li> <a href =https://arxiv.org/abs/2409.19926>Preprint,</a> "Data-driven decision-making under uncertainty with entropic risk measure" with Erick Delage and Angelos Georghiou, available online   </li>
 								<li> <a href=Newsletter_SPS.pdf>SPS Newsletter</a> on Contextual Stochastic Optimization Methods for Decision Making
 									Under Uncertainty</li>
