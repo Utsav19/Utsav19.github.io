@@ -24,13 +24,31 @@
 
     <!-- Inline CSS for Announcement Styling -->
     <style>
+		<style>
+  /* --- Language switch (EN | FR) --- */
+  .lang-switch {
+    width: 100%;
+    max-width: 800px;
+    margin: 10px auto 0 auto;
+    text-align: right;
+    font-size: 14px;
+  }
+  .lang-switch a {
+    text-decoration: none;
+  }
+  .lang-switch a:hover {
+    text-decoration: underline;
+  }
+  .lang-switch .active {
+    font-weight: 700;
+  }
         /* Announcement Container */
         /* Announcement Container */
         .announcement {
             background-color: #ffffe0; /* Light yellow background */
             /* border-left: 6px solid #ffbf00; Bright yellow left border */
             padding: 10px 15px;
-            margin: 5 px auto;
+            margin: 5px auto;
             /* border-radius: 4px; */
             /* box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); */
             max-width: 800px; /* Adjust as needed */
@@ -39,7 +57,7 @@
 		.announcement::before {
         content: "📢";
         font-size: 1.5em;
-        margin-right: 5 px;
+        margin-right: 5px;
         vertical-align: middle;
     }	
 		/* Ensure Links Inherit Default Color */
