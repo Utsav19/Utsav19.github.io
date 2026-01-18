@@ -12,7 +12,7 @@ a:hover {
 }
 html, body { margin: 0; padding: 0; }
 
-body, td, th, tr, p, a {
+body, td, th, tr, p{
   font-family: 'Titillium Web', Verdana, Helvetica, sans-serif;
   font-size: 20px;
   font-weight: 400;
