@@ -51,15 +51,12 @@ a:hover papertitle {
   text-decoration: underline;
 }
 
-/* Style for publication entries - remove blue from author links */
-papertitle + br + strong,
-papertitle + br + strong + a,
-papertitle + br + a {
-  color: #000;
+/* Remove blue from all links in publication table cells */
+table tbody tr td a:not(:has(papertitle)) {
+  color: inherit;
 }
 
-papertitle + br + strong + a:hover,
-papertitle + br + a:hover {
+table tbody tr td a:not(:has(papertitle)):hover {
   color: #f09228;
   text-decoration: underline;
 }
