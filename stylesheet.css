@@ -51,12 +51,15 @@ a:hover papertitle {
   text-decoration: underline;
 }
 
-/* Remove blue color from coauthor links in publications */
-td a {
+/* Remove blue color and underline from coauthor links after papertitle */
+papertitle ~ br ~ a,
+papertitle ~ br ~ strong ~ a {
   color: inherit;
+  text-decoration: none;
 }
 
-td a:hover {
+papertitle ~ br ~ a:hover,
+papertitle ~ br ~ strong ~ a:hover {
   text-decoration: underline;
 }
 
