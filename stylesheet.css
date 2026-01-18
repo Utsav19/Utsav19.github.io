@@ -30,7 +30,7 @@ strong {
 
 heading {
   font-family: 'Titillium Web', Verdana, Helvetica, sans-serif;
-  font-size: 22px;
+  font-size: 24px;
   font-weight: 700;
 }
 
@@ -46,20 +46,7 @@ a papertitle {
   text-decoration: none;
 }
 
-a:hover papertitle {
-  color: inherit;
-  text-decoration: underline;
-}
 
-/* Remove blue from all links in publication table cells */
-table tbody tr td a:not(:has(papertitle)) {
-  color: inherit;
-}
-
-table tbody tr td a:not(:has(papertitle)):hover {
-  color: #f09228;
-  text-decoration: underline;
-}
 
 name {
   font-family: 'Titillium Web', Verdana, Helvetica, sans-serif;
