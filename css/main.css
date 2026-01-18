@@ -82,3 +82,6 @@ span.highlight {
 .lang-switch a { text-decoration: none; }
 .lang-switch a:hover { text-decoration: underline; }
 .lang-switch .active { font-weight: 700; }
+body, td, th, tr, p, a { 
+  font-family: 'Titillium Web', sans-serif !important;
+}
