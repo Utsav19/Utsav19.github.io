@@ -24,19 +24,19 @@ td { padding: 12px !important; }
 
 strong {
   font-family: 'Titillium Web', Verdana, Helvetica, sans-serif;
-  font-size: 18px;
+  font-size: 14px;
   font-weight: 700;
 }
 
 heading {
   font-family: 'Titillium Web', Verdana, Helvetica, sans-serif;
-  font-size: 24px;
+  font-size: 20px;
   font-weight: 700;
 }
 
 papertitle{
   font-family: 'Titillium Web', Verdana, Helvetica, sans-serif;
-  font-size: 18px;      /* was 18px */
+  font-size: 14px;      /* was 18px */
   font-weight: 300;
   line-height: 1.25;
 }
