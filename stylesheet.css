@@ -1,6 +1,15 @@
 /* CSS Document */
 @import url('https://fonts.googleapis.com/css2?family=Titillium+Web:wght@400;600;700;800&display=swap');
+a {
+  color: #1772d0;
+  text-decoration: none;
+}
 
+a:focus,
+a:hover {
+  color: #f09228;
+  text-decoration: none;   /* keep no underline on hover */
+}
 html, body { margin: 0; padding: 0; }
 
 body, td, th, tr, p, a {
