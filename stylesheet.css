@@ -14,7 +14,7 @@ html, body { margin: 0; padding: 0; }
 
 body, td, th, tr, p{
   font-family: 'Titillium Web', Verdana, Helvetica, sans-serif;
-  font-size: 18px;
+  font-size: 14px;
   font-weight: 400;
   line-height: 1.45;
 }
@@ -30,7 +30,7 @@ strong {
 
 heading {
   font-family: 'Titillium Web', Verdana, Helvetica, sans-serif;
-  font-size: 20px;
+  font-size: 18px;
   font-weight: 700;
 }
 
@@ -57,7 +57,7 @@ strong ~ a:hover {
 
 name {
   font-family: 'Titillium Web', Verdana, Helvetica, sans-serif;
-  font-size: 32px;
+  font-size: 28px;
   font-weight: 700;
 }
 
