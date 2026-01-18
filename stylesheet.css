@@ -31,6 +31,16 @@ papertitle {
   font-weight: 700;
 }
 
+a papertitle {
+  color: inherit;
+  text-decoration: none;
+}
+
+a:hover papertitle {
+  color: inherit;
+  text-decoration: underline;
+}
+
 name {
   font-family: 'Titillium Web', Verdana, Helvetica, sans-serif;
   font-size: 32px;
