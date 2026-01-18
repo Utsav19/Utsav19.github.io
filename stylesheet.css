@@ -34,10 +34,11 @@ heading {
   font-weight: 700;
 }
 
-papertitle {
+papertitle{
   font-family: 'Titillium Web', Verdana, Helvetica, sans-serif;
-  font-size: 18px;
+  font-size: 22px;      /* was 18px */
   font-weight: 700;
+  line-height: 1.25;
 }
 
 a papertitle {
