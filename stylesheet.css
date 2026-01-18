@@ -46,7 +46,14 @@ a papertitle {
   text-decoration: none;
 }
 
+/* Remove blue color from coauthor name links (links that follow the author's name) */
+strong ~ a {
+  color: inherit;
+}
 
+strong ~ a:hover {
+  color: #f09228;
+}
 
 name {
   font-family: 'Titillium Web', Verdana, Helvetica, sans-serif;
