@@ -46,7 +46,23 @@ a papertitle {
   text-decoration: none;
 }
 
+a:hover papertitle {
+  color: inherit;
+  text-decoration: underline;
+}
 
+/* Style for publication entries - remove blue from author links */
+papertitle + br + strong,
+papertitle + br + strong + a,
+papertitle + br + a {
+  color: #000;
+}
+
+papertitle + br + strong + a:hover,
+papertitle + br + a:hover {
+  color: #f09228;
+  text-decoration: underline;
+}
 
 name {
   font-family: 'Titillium Web', Verdana, Helvetica, sans-serif;
