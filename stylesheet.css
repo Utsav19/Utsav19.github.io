@@ -1,5 +1,13 @@
 /* CSS Document */
 @import url('https://fonts.googleapis.com/css2?family=Titillium+Web:wght@400;600;700;800&display=swap'); 
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  line-height: 1.45;
+}
 a {
   color: #1772d0;
   text-decoration: none;
@@ -83,6 +91,3 @@ span.highlight {
 .lang-switch a:hover { text-decoration: underline; }
 .lang-switch .active { font-weight: 700; }
 
-body, td, th, tr, p, a { 
-  font-family: 'Titillium Web', sans-serif !important;
-}
