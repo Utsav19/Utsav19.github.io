@@ -12,16 +12,13 @@ a:hover {
 }
 html, body { margin: 0; padding: 0; }
 
-/* body, td, th, tr, p{
+body, td, th, tr, p{
   font-family: 'Titillium Web', Verdana, Helvetica, sans-serif;
   font-size: 18px;
   font-weight: 400;
   line-height: 1.45;
-} */
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+}
 
-body, td, th, tr, p { font-family: 'Inter', sans-serif; }
-body { font-size: 18px; line-height: 1.6; font-weight: 400; }
 /* optional: tighten table padding */
 td { padding: 12px !important; }
 
@@ -49,22 +46,7 @@ a papertitle {
   text-decoration: none;
 }
 
-a:hover papertitle {
-  color: inherit;
-  text-decoration: underline;
-}
 
-/* Remove blue color and underline from coauthor links after papertitle */
-papertitle ~ br ~ a,
-papertitle ~ br ~ strong ~ a {
-  color: inherit;
-  text-decoration: none;
-}
-
-papertitle ~ br ~ a:hover,
-papertitle ~ br ~ strong ~ a:hover {
-  text-decoration: underline;
-}
 
 name {
   font-family: 'Titillium Web', Verdana, Helvetica, sans-serif;
@@ -104,7 +86,7 @@ span.highlight {
   right: 16px;
   z-index: 9999;
 
-  font-size: 18px;
+  font-size: 14px;
   background: rgba(255,255,255,0.9);
   padding: 6px 10px;
   border-radius: 8px;
