@@ -1,5 +1,5 @@
 /* CSS Document */
-@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:wght@400;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:wght@400;500;600;700;800&display=swap');
 a {
   color: #1772d0;
   text-decoration: none;
@@ -15,8 +15,9 @@ html, body { margin: 0; padding: 0; }
 body, td, th, tr, p{
   font-family: 'Titillium Web', Verdana, Helvetica, sans-serif;
   font-size: 16px;
-  font-weight: 400;
+  font-weight: 500;
   line-height: 1.45;
+  color: #111;        /* add this */
 }
 
 /* optional: tighten table padding */
