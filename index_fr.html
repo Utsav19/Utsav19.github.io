@@ -122,7 +122,7 @@
     <div class="lang-switch">
   <a href="index.html">EN</a> | <a href="index_fr.html" class="active">FR</a>
 </div>
-    <button id="theme-toggle" class="theme-toggle" type="button">Mode sombre</button>
+    <button id="theme-toggle" class="theme-toggle" type="button" aria-label="Basculer le thème" title="Basculer le thème">🌙</button>
 	<table style="width:100%;max-width:1000px;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
 		<tr style="padding:0px">
 			<td style="padding:0px">
@@ -452,7 +452,7 @@ en indiquant comme objet : « Candidature PhD – [Votre intérêt de recherche]
 
                         function applyTheme(value) {
                             root.setAttribute("data-theme", value);
-                            toggle.textContent = value === "dark" ? "Mode clair" : "Mode sombre";
+                            toggle.textContent = value === "dark" ? "☀" : "🌙";
                         }
 
                         applyTheme(theme);
