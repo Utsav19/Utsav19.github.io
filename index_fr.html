@@ -24,10 +24,50 @@
 
     <!-- Inline CSS for Announcement Styling -->
     <style>
+        :root {
+            --bg-color: #ffffff;
+            --text-color: #111111;
+            --link-color: #0055aa;
+            --link-hover-color: #f09228;
+            --announcement-bg: #ffffe0;
+            --lang-switch-bg: rgba(255, 255, 255, 0.9);
+            --panel-border: #d9d9d9;
+            --button-bg: #f2f2f2;
+            --button-text: #111111;
+        }
+
+        [data-theme="dark"] {
+            --bg-color: #0f1720;
+            --text-color: #e6edf3;
+            --link-color: #7db5ff;
+            --link-hover-color: #ffc373;
+            --announcement-bg: #3e3a08;
+            --lang-switch-bg: rgba(22, 29, 38, 0.95);
+            --panel-border: #2a3644;
+            --button-bg: #1b2530;
+            --button-text: #e6edf3;
+        }
+
+        html, body {
+            background-color: var(--bg-color);
+        }
+
+        body, td, th, tr, p, li, strong, heading, papertitle, name {
+            color: var(--text-color) !important;
+        }
+
+        a {
+            color: var(--link-color) !important;
+        }
+
+        a:hover, a:focus {
+            color: var(--link-hover-color) !important;
+        }
+
         /* Announcement Container */
         /* Announcement Container */
         .announcement {
-            background-color: #ffffe0; /* Light yellow background */
+            background-color: var(--announcement-bg); /* Light yellow background */
             /* border-left: 6px solid #ffbf00; Bright yellow left border */
             padding: 10px 15px;
             margin: 5px auto;
@@ -56,12 +96,33 @@
         display: block;
         margin-top: 10px;
     }
+
+        .lang-switch {
+            background: var(--lang-switch-bg);
+            border: 1px solid var(--panel-border);
+        }
+
+        .theme-toggle {
+            position: fixed;
+            top: 56px;
+            right: 16px;
+            z-index: 9999;
+            font-size: 14px;
+            border: 1px solid var(--panel-border);
+            border-radius: 8px;
+            background: var(--button-bg);
+            color: var(--button-text);
+            padding: 6px 10px;
+            cursor: pointer;
+            font-family: inherit;
+        }
     </style>
 </head>
 <body>
     <div class="lang-switch">
   <a href="index.html">EN</a> | <a href="index_fr.html" class="active">FR</a>
 </div>
+    <button id="theme-toggle" class="theme-toggle" type="button">Mode sombre</button>
 	<table style="width:100%;max-width:1000px;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
 		<tr style="padding:0px">
 			<td style="padding:0px">
@@ -381,6 +442,29 @@ en indiquant comme objet : « Candidature PhD – [Votre intérêt de recherche]
 						</tbody>
 					</table>
 
+                <script>
+                    (function () {
+                        var root = document.documentElement;
+                        var toggle = document.getElementById("theme-toggle");
+                        var savedTheme = localStorage.getItem("theme");
+                        var prefersDark = window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches;
+                        var theme = savedTheme || (prefersDark ? "dark" : "light");
+
+                        function applyTheme(value) {
+                            root.setAttribute("data-theme", value);
+                            toggle.textContent = value === "dark" ? "Mode clair" : "Mode sombre";
+                        }
+
+                        applyTheme(theme);
+
+                        toggle.addEventListener("click", function () {
+                            var current = root.getAttribute("data-theme") === "dark" ? "dark" : "light";
+                            var next = current === "dark" ? "light" : "dark";
+                            localStorage.setItem("theme", next);
+                            applyTheme(next);
+                        });
+                    })();
+                </script>
 				</body>
 
 				</html>

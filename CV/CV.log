@@ -1,0 +1,388 @@
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=pdflatex 2025.3.8)  21 JAN 2026 16:07
+entering extended mode
+ restricted \write18 enabled.
+ %&-line parsing enabled.
+**CV.tex
+(./CV.tex
+LaTeX2e <2024-11-01> patch level 2
+L3 programming layer <2025-01-18>
+(/usr/local/texlive/2025/texmf-dist/tex/latex/base/article.cls
+Document Class: article 2024/06/29 v1.4n Standard LaTeX document class
+(/usr/local/texlive/2025/texmf-dist/tex/latex/base/size12.clo
+File: size12.clo 2024/06/29 v1.4n Standard LaTeX file (size option)
+)
+\c@part=\count196
+\c@section=\count197
+\c@subsection=\count198
+\c@subsubsection=\count199
+\c@paragraph=\count266
+\c@subparagraph=\count267
+\c@figure=\count268
+\c@table=\count269
+\abovecaptionskip=\skip49
+\belowcaptionskip=\skip50
+\bibindent=\dimen141
+)
+(/usr/local/texlive/2025/texmf-dist/tex/latex/tools/calc.sty
+Package: calc 2023/07/08 v4.3 Infix arithmetic (KKT,FJ)
+\calc@Acount=\count270
+\calc@Bcount=\count271
+\calc@Adimen=\dimen142
+\calc@Bdimen=\dimen143
+\calc@Askip=\skip51
+\calc@Bskip=\skip52
+LaTeX Info: Redefining \setlength on input line 80.
+LaTeX Info: Redefining \addtolength on input line 81.
+\calc@Ccount=\count272
+\calc@Cskip=\skip53
+)
+(/usr/local/texlive/2025/texmf-dist/tex/latex/comment/comment.sty
+\CommentStream=\write3
+
+Excluding comment 'comment')
+(/usr/local/texlive/2025/texmf-dist/tex/latex/url/url.sty
+\Urlmuskip=\muskip17
+Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
+)
+(/usr/local/texlive/2025/texmf-dist/tex/generic/babel/babel.sty
+Package: babel 2025/02/14 v25.4 The multilingual framework for pdfLaTeX, LuaLaT
+eX and XeLaTeX
+\babel@savecnt=\count273
+\U@D=\dimen144
+\l@unhyphenated=\language90
+
+(/usr/local/texlive/2025/texmf-dist/tex/generic/babel/txtbabel.def)
+\bbl@readstream=\read2
+\bbl@dirlevel=\count274
+
+(/usr/local/texlive/2025/texmf-dist/tex/generic/babel-english/english.ldf
+Language: english 2017/06/06 v3.3r English support from the babel system
+Package babel Info: Hyphen rules for 'canadian' set to \l@english
+(babel)             (\language0). Reported on input line 102.
+Package babel Info: Hyphen rules for 'australian' set to \l@ukenglish
+(babel)             (\language22). Reported on input line 105.
+Package babel Info: Hyphen rules for 'newzealand' set to \l@ukenglish
+(babel)             (\language22). Reported on input line 108.
+))
+(/usr/local/texlive/2025/texmf-dist/tex/generic/babel/locale/en/babel-english.t
+ex
+Package babel Info: Importing font and identification data for english
+(babel)             from babel-en.ini. Reported on input line 11.
+) (/usr/local/texlive/2025/texmf-dist/tex/latex/tools/multicol.sty
+Package: multicol 2024/09/14 v1.9i multicolumn formatting (FMi)
+\c@tracingmulticols=\count275
+\mult@box=\box52
+\multicol@leftmargin=\dimen145
+\c@unbalance=\count276
+\c@collectmore=\count277
+\doublecol@number=\count278
+\multicoltolerance=\count279
+\multicolpretolerance=\count280
+\full@width=\dimen146
+\page@free=\dimen147
+\premulticols=\dimen148
+\postmulticols=\dimen149
+\multicolsep=\skip54
+\multicolbaselineskip=\skip55
+\partial@page=\box53
+\last@line=\box54
+\mc@boxedresult=\box55
+\maxbalancingoverflow=\dimen150
+\mult@rightbox=\box56
+\mult@grightbox=\box57
+\mult@firstbox=\box58
+\mult@gfirstbox=\box59
+\@tempa=\box60
+\@tempa=\box61
+\@tempa=\box62
+\@tempa=\box63
+\@tempa=\box64
+\@tempa=\box65
+\@tempa=\box66
+\@tempa=\box67
+\@tempa=\box68
+\@tempa=\box69
+\@tempa=\box70
+\@tempa=\box71
+\@tempa=\box72
+\@tempa=\box73
+\@tempa=\box74
+\@tempa=\box75
+\@tempa=\box76
+\@tempa=\box77
+\@tempa=\box78
+\@tempa=\box79
+\@tempa=\box80
+\@tempa=\box81
+\@tempa=\box82
+\@tempa=\box83
+\@tempa=\box84
+\@tempa=\box85
+\@tempa=\box86
+\@tempa=\box87
+\@tempa=\box88
+\@tempa=\box89
+\@tempa=\box90
+\@tempa=\box91
+\@tempa=\box92
+\@tempa=\box93
+\@tempa=\box94
+\@tempa=\box95
+\c@minrows=\count281
+\c@columnbadness=\count282
+\c@finalcolumnbadness=\count283
+\last@try=\dimen151
+\multicolovershoot=\dimen152
+\multicolundershoot=\dimen153
+\mult@nat@firstbox=\box96
+\colbreak@box=\box97
+\mc@col@check@num=\count284
+)
+(/usr/local/texlive/2025/texmf-dist/tex/latex/eurosym/eurosym.sty
+Package: eurosym 1998/08/06 v1.1 European currency symbol ``Euro''
+\@eurobox=\box98
+)
+(/usr/local/texlive/2025/texmf-dist/tex/latex/tfrupee/tfrupee.sty
+Package: tfrupee 2010/12/15 LaTeX Support for the TechFat Rupee symbols by Tech
+Fat (http://techfat.blogspot.com/2010/07/new-open-source-india-rupee-font.html)
+. Adapted for use with TeX by Palle Jorgensen, hamselv(a)pallej.dk
+)
+(/usr/local/texlive/2025/texmf-dist/tex/latex/fontawesome5/fontawesome5.sty
+(/usr/local/texlive/2025/texmf-dist/tex/latex/l3kernel/expl3.sty
+Package: expl3 2025-01-18 L3 programming layer (loader) 
+
+(/usr/local/texlive/2025/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
+File: l3backend-pdftex.def 2024-05-08 L3 backend support: PDF output (pdfTeX)
+\l__color_backend_stack_int=\count285
+\l__pdf_internal_box=\box99
+))
+Package: fontawesome5 2022/05/02 v5.15.4 Font Awesome 5
+
+(/usr/local/texlive/2025/texmf-dist/tex/latex/l3packages/l3keys2e/l3keys2e.sty
+Package: l3keys2e 2024-08-16 LaTeX2e option processing using LaTeX3 keys
+) (/usr/local/texlive/2025/texmf-dist/tex/latex/l3packages/xparse/xparse.sty
+Package: xparse 2024-08-16 L3 Experimental document command parser
+)
+(/usr/local/texlive/2025/texmf-dist/tex/latex/fontawesome5/fontawesome5-generic
+-helper.sty
+Package: fontawesome5-generic-helper 2022/05/02 v5.15.4 non-uTeX helper for fon
+tawesome5
+
+(/usr/local/texlive/2025/texmf-dist/tex/latex/fontawesome5/fontawesome5-mapping
+.def))) (/usr/local/texlive/2025/texmf-dist/tex/latex/etaremune/etaremune.sty
+Package: etaremune 2005/06/01 v1.2 Reversed enumerate (HA)
+
+(/usr/local/texlive/2025/texmf-dist/tex/latex/xkeyval/xkeyval.sty
+Package: xkeyval 2022/06/16 v2.9 package option processing (HA)
+
+(/usr/local/texlive/2025/texmf-dist/tex/generic/xkeyval/xkeyval.tex
+(/usr/local/texlive/2025/texmf-dist/tex/generic/xkeyval/xkvutils.tex
+\XKV@toks=\toks17
+\XKV@tempa@toks=\toks18
+
+(/usr/local/texlive/2025/texmf-dist/tex/generic/xkeyval/keyval.tex))
+\XKV@depth=\count286
+File: xkeyval.tex 2014/12/03 v2.7a key=value parser (HA)
+))
+\c@EM@itemctr=\count287
+\c@EM@etaremunectr=\count288
+)
+(/usr/local/texlive/2025/texmf-dist/tex/latex/biblatex/biblatex.sty
+Package: biblatex 2024/03/21 v3.20 programmable bibliographies (PK/MW)
+
+(/usr/local/texlive/2025/texmf-dist/tex/generic/pdftexcmds/pdftexcmds.sty
+Package: pdftexcmds 2020-06-27 v0.33 Utility functions of pdfTeX for LuaTeX (HO
+)
+
+(/usr/local/texlive/2025/texmf-dist/tex/generic/infwarerr/infwarerr.sty
+Package: infwarerr 2019/12/03 v1.5 Providing info/warning/error messages (HO)
+)
+(/usr/local/texlive/2025/texmf-dist/tex/generic/iftex/iftex.sty
+Package: iftex 2024/12/12 v1.0g TeX engine tests
+)
+(/usr/local/texlive/2025/texmf-dist/tex/generic/ltxcmds/ltxcmds.sty
+Package: ltxcmds 2023-12-04 v1.26 LaTeX kernel commands for general use (HO)
+)
+Package pdftexcmds Info: \pdf@primitive is available.
+Package pdftexcmds Info: \pdf@ifprimitive is available.
+Package pdftexcmds Info: \pdfdraftmode found.
+)
+(/usr/local/texlive/2025/texmf-dist/tex/latex/etoolbox/etoolbox.sty
+Package: etoolbox 2025/02/11 v2.5l e-TeX tools for LaTeX (JAW)
+\etb@tempcnta=\count289
+)
+(/usr/local/texlive/2025/texmf-dist/tex/latex/kvoptions/kvoptions.sty
+Package: kvoptions 2022-06-15 v3.15 Key value format for package options (HO)
+
+(/usr/local/texlive/2025/texmf-dist/tex/latex/kvsetkeys/kvsetkeys.sty
+Package: kvsetkeys 2022-10-05 v1.19 Key value parser (HO)
+))
+(/usr/local/texlive/2025/texmf-dist/tex/latex/logreq/logreq.sty
+Package: logreq 2010/08/04 v1.0 xml request logger
+\lrq@indent=\count290
+
+(/usr/local/texlive/2025/texmf-dist/tex/latex/logreq/logreq.def
+File: logreq.def 2010/08/04 v1.0 logreq spec v1.0
+))
+(/usr/local/texlive/2025/texmf-dist/tex/latex/base/ifthen.sty
+Package: ifthen 2024/03/16 v1.1e Standard LaTeX ifthen package (DPC)
+)
+\c@tabx@nest=\count291
+\c@listtotal=\count292
+\c@listcount=\count293
+\c@liststart=\count294
+\c@liststop=\count295
+\c@citecount=\count296
+\c@citetotal=\count297
+\c@multicitecount=\count298
+\c@multicitetotal=\count299
+\c@instcount=\count300
+\c@maxnames=\count301
+\c@minnames=\count302
+\c@maxitems=\count303
+\c@minitems=\count304
+\c@citecounter=\count305
+\c@maxcitecounter=\count306
+\c@savedcitecounter=\count307
+\c@uniquelist=\count308
+\c@uniquename=\count309
+\c@refsection=\count310
+\c@refsegment=\count311
+\c@maxextratitle=\count312
+\c@maxextratitleyear=\count313
+\c@maxextraname=\count314
+\c@maxextradate=\count315
+\c@maxextraalpha=\count316
+\c@abbrvpenalty=\count317
+\c@highnamepenalty=\count318
+\c@lownamepenalty=\count319
+\c@maxparens=\count320
+\c@parenlevel=\count321
+\blx@tempcnta=\count322
+\blx@tempcntb=\count323
+\blx@tempcntc=\count324
+\c@blx@maxsection=\count325
+\blx@maxsegment@0=\count326
+\blx@notetype=\count327
+\blx@parenlevel@text=\count328
+\blx@parenlevel@foot=\count329
+\blx@sectionciteorder@0=\count330
+\blx@sectionciteorderinternal@0=\count331
+\blx@entrysetcounter=\count332
+\blx@biblioinstance=\count333
+\labelnumberwidth=\skip56
+\labelalphawidth=\skip57
+\biblabelsep=\skip58
+\bibitemsep=\skip59
+\bibnamesep=\skip60
+\bibinitsep=\skip61
+\bibparsep=\skip62
+\bibhang=\skip63
+\blx@bcfin=\read3
+\blx@bcfout=\write4
+\blx@langwohyphens=\language91
+\c@mincomprange=\count334
+\c@maxcomprange=\count335
+\c@mincompwidth=\count336
+Package biblatex Info: Trying to load biblatex default data model...
+Package biblatex Info: ... file 'blx-dm.def' found.
+
+(/usr/local/texlive/2025/texmf-dist/tex/latex/biblatex/blx-dm.def
+File: blx-dm.def 2024/03/21 v3.20 biblatex datamodel (PK/MW)
+)
+Package biblatex Info: Trying to load biblatex style data model...
+Package biblatex Info: ... file 'numeric.dbx' not found.
+Package biblatex Info: Trying to load biblatex custom data model...
+Package biblatex Info: ... file 'biblatex-dm.cfg' not found.
+\c@afterword=\count337
+\c@savedafterword=\count338
+\c@annotator=\count339
+\c@savedannotator=\count340
+\c@author=\count341
+\c@savedauthor=\count342
+\c@bookauthor=\count343
+\c@savedbookauthor=\count344
+\c@commentator=\count345
+\c@savedcommentator=\count346
+\c@editor=\count347
+\c@savededitor=\count348
+\c@editora=\count349
+\c@savededitora=\count350
+\c@editorb=\count351
+\c@savededitorb=\count352
+\c@editorc=\count353
+\c@savededitorc=\count354
+\c@foreword=\count355
+\c@savedforeword=\count356
+\c@holder=\count357
+\c@savedholder=\count358
+\c@introduction=\count359
+\c@savedintroduction=\count360
+\c@namea=\count361
+\c@savednamea=\count362
+\c@nameb=\count363
+\c@savednameb=\count364
+\c@namec=\count365
+\c@savednamec=\count366
+\c@translator=\count367
+\c@savedtranslator=\count368
+\c@shortauthor=\count369
+\c@savedshortauthor=\count370
+\c@shorteditor=\count371
+\c@savedshorteditor=\count372
+\c@labelname=\count373
+\c@savedlabelname=\count374
+\c@institution=\count375
+\c@savedinstitution=\count376
+\c@lista=\count377
+\c@savedlista=\count378
+\c@listb=\count379
+\c@savedlistb=\count380
+\c@listc=\count381
+\c@savedlistc=\count382
+\c@listd=\count383
+\c@savedlistd=\count384
+\c@liste=\count385
+\c@savedliste=\count386
+\c@listf=\count387
+\c@savedlistf=\count388
+\c@location=\count389
+\c@savedlocation=\count390
+\c@organization=\count391
+\c@savedorganization=\count392
+\c@origlocation=\count393
+\c@savedoriglocation=\count394
+\c@origpublisher=\count395
+\c@savedorigpublisher=\count396
+\c@publisher=\count397
+\c@savedpublisher=\count398
+\c@language=\count399
+\c@savedlanguage=\count400
+\c@origlanguage=\count401
+\c@savedoriglanguage=\count402
+\c@pageref=\count403
+\c@savedpageref=\count404
+\shorthandwidth=\skip64
+\shortjournalwidth=\skip65
+\shortserieswidth=\skip66
+\shorttitlewidth=\skip67
+\shortauthorwidth=\skip68
+\shorteditorwidth=\skip69
+\locallabelnumberwidth=\skip70
+\locallabelalphawidth=\skip71
+\localshorthandwidth=\skip72
+\localshortjournalwidth=\skip73
+\localshortserieswidth=\skip74
+\localshorttitlewidth=\skip75
+\localshortauthorwidth=\skip76
+\localshorteditorwidth=\skip77
+Package biblatex Info: Trying to load compatibility code...
+Package biblatex Info: ... file 'blx-compat.def' found.
+
+(/usr/local/texlive/2025/texmf-dist/tex/latex/biblatex/blx-compat.def
+File: blx-compat.def 2024/03/21 v3.20 biblatex compatibility (PK/MW)
+)
+Package biblatex Info: Trying to load generic definitions...
+Package biblatex Info: ... file 'biblatex.def' found.
+
+(/usr/local/texlive/2025/texmf-dist/tex/

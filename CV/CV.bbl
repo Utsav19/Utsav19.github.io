@@ -1,0 +1,424 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 3.3 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{0}
+  \datalist[entry]{none/global//global/global/global}
+    \entry{sadana2025survey}{article}{}{}
+      \name{author}{6}{}{%
+        {{hash=dfe6ccf91f8bbffafbf3ed9087ec7e6e}{%
+           family={Sadana},
+           familyi={S\bibinitperiod},
+           given={Utsav},
+           giveni={U\bibinitperiod}}}%
+        {{hash=54ba16f258f561ac08e5f95593871c99}{%
+           family={Chenreddy},
+           familyi={C\bibinitperiod},
+           given={Abhilash},
+           giveni={A\bibinitperiod}}}%
+        {{hash=c2975f038ab8d01f2b88805f2a5d7ac8}{%
+           family={Delage},
+           familyi={D\bibinitperiod},
+           given={Erick},
+           giveni={E\bibinitperiod}}}%
+        {{hash=92e0d8a0df9a8364b2f32994c54cb82a}{%
+           family={Forel},
+           familyi={F\bibinitperiod},
+           given={Alexandre},
+           giveni={A\bibinitperiod}}}%
+        {{hash=f9fa66440bd95ec66dc1a16cfaff7b7a}{%
+           family={Frejinger},
+           familyi={F\bibinitperiod},
+           given={Emma},
+           giveni={E\bibinitperiod}}}%
+        {{hash=f8b1fe2b57f8a82a140583738588869a}{%
+           family={Vidal},
+           familyi={V\bibinitperiod},
+           given={Thibaut},
+           giveni={T\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Elsevier}%
+      }
+      \strng{namehash}{6c4679626f3f98c84e598af50bbe4220}
+      \strng{fullhash}{c982caa94948a057fdb585df67ca26b8}
+      \strng{fullhashraw}{c982caa94948a057fdb585df67ca26b8}
+      \strng{bibnamehash}{6c4679626f3f98c84e598af50bbe4220}
+      \strng{authorbibnamehash}{6c4679626f3f98c84e598af50bbe4220}
+      \strng{authornamehash}{6c4679626f3f98c84e598af50bbe4220}
+      \strng{authorfullhash}{c982caa94948a057fdb585df67ca26b8}
+      \strng{authorfullhashraw}{c982caa94948a057fdb585df67ca26b8}
+      \field{extraname}{1}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{European Journal of Operational Research}
+      \field{note}{More than 240 citations}
+      \field{number}{2}
+      \field{title}{A survey of contextual optimization methods for decision-making under uncertainty}
+      \field{volume}{320}
+      \field{year}{2025}
+      \field{pages}{271\bibrangedash 289}
+      \range{pages}{19}
+    \endentry
+    \entry{sadana2023value}{article}{}{}
+      \name{author}{2}{}{%
+        {{hash=dfe6ccf91f8bbffafbf3ed9087ec7e6e}{%
+           family={Sadana},
+           familyi={S\bibinitperiod},
+           given={Utsav},
+           giveni={U\bibinitperiod}}}%
+        {{hash=c2975f038ab8d01f2b88805f2a5d7ac8}{%
+           family={Delage},
+           familyi={D\bibinitperiod},
+           given={Erick},
+           giveni={E\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {INFORMS}%
+      }
+      \strng{namehash}{5acbf57303981d17a5b814c25c060250}
+      \strng{fullhash}{5acbf57303981d17a5b814c25c060250}
+      \strng{fullhashraw}{5acbf57303981d17a5b814c25c060250}
+      \strng{bibnamehash}{5acbf57303981d17a5b814c25c060250}
+      \strng{authorbibnamehash}{5acbf57303981d17a5b814c25c060250}
+      \strng{authornamehash}{5acbf57303981d17a5b814c25c060250}
+      \strng{authorfullhash}{5acbf57303981d17a5b814c25c060250}
+      \strng{authorfullhashraw}{5acbf57303981d17a5b814c25c060250}
+      \field{extraname}{1}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{INFORMS Journal on Computing}
+      \field{note}{Featured Article (30\% articles)}
+      \field{number}{1}
+      \field{title}{The value of randomized strategies in distributionally robust risk-averse network interdiction problems}
+      \field{volume}{35}
+      \field{year}{2023}
+      \field{pages}{216\bibrangedash 232}
+      \range{pages}{17}
+    \endentry
+    \entry{sadana2023feedback}{article}{}{}
+      \name{author}{3}{}{%
+        {{hash=dfe6ccf91f8bbffafbf3ed9087ec7e6e}{%
+           family={Sadana},
+           familyi={S\bibinitperiod},
+           given={Utsav},
+           giveni={U\bibinitperiod}}}%
+        {{hash=94c2b50dd3e3455125090a8306a3bff9}{%
+           family={Reddy},
+           familyi={R\bibinitperiod},
+           given={Puduru\bibnamedelima Viswanadha},
+           giveni={P\bibinitperiod\bibinitdelim V\bibinitperiod}}}%
+        {{hash=2c2696bf47f24fb6a8803134cdc9db74}{%
+           family={Zaccour},
+           familyi={Z\bibinitperiod},
+           given={Georges},
+           giveni={G\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {IEEE}%
+      }
+      \strng{namehash}{48dc9369efb540045e68445708003c8f}
+      \strng{fullhash}{48dc9369efb540045e68445708003c8f}
+      \strng{fullhashraw}{48dc9369efb540045e68445708003c8f}
+      \strng{bibnamehash}{48dc9369efb540045e68445708003c8f}
+      \strng{authorbibnamehash}{48dc9369efb540045e68445708003c8f}
+      \strng{authornamehash}{48dc9369efb540045e68445708003c8f}
+      \strng{authorfullhash}{48dc9369efb540045e68445708003c8f}
+      \strng{authorfullhashraw}{48dc9369efb540045e68445708003c8f}
+      \field{extraname}{1}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{IEEE Transactions on Automatic Control}
+      \field{note}{Finalist, Best Paper Award, International Symposium on Dynamic Games, Porto, 2022}
+      \field{number}{8}
+      \field{title}{Feedback Nash equilibria in differential games with impulse control}
+      \field{volume}{68}
+      \field{year}{2023}
+      \field{pages}{4523\bibrangedash 4538}
+      \range{pages}{16}
+    \endentry
+    \entry{sadana2021sampled}{article}{}{}
+      \name{author}{4}{}{%
+        {{hash=dfe6ccf91f8bbffafbf3ed9087ec7e6e}{%
+           family={Sadana},
+           familyi={S\bibinitperiod},
+           given={Utsav},
+           giveni={U\bibinitperiod}}}%
+        {{hash=94c2b50dd3e3455125090a8306a3bff9}{%
+           family={Reddy},
+           familyi={R\bibinitperiod},
+           given={Puduru\bibnamedelima Viswanadha},
+           giveni={P\bibinitperiod\bibinitdelim V\bibinitperiod}}}%
+        {{hash=70fa925cb5f5e3bd935b997f073ca47a}{%
+           family={Başar},
+           familyi={B\bibinitperiod},
+           given={Tamer},
+           giveni={T\bibinitperiod}}}%
+        {{hash=2c2696bf47f24fb6a8803134cdc9db74}{%
+           family={Zaccour},
+           familyi={Z\bibinitperiod},
+           given={Georges},
+           giveni={G\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Springer}%
+      }
+      \strng{namehash}{6c4679626f3f98c84e598af50bbe4220}
+      \strng{fullhash}{f6896dfb46d15c5b5f078a5350be2475}
+      \strng{fullhashraw}{f6896dfb46d15c5b5f078a5350be2475}
+      \strng{bibnamehash}{6c4679626f3f98c84e598af50bbe4220}
+      \strng{authorbibnamehash}{6c4679626f3f98c84e598af50bbe4220}
+      \strng{authornamehash}{6c4679626f3f98c84e598af50bbe4220}
+      \strng{authorfullhash}{f6896dfb46d15c5b5f078a5350be2475}
+      \strng{authorfullhashraw}{f6896dfb46d15c5b5f078a5350be2475}
+      \field{extraname}{2}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Journal of Optimization Theory and Applications}
+      \field{number}{3}
+      \field{title}{Sampled-data Nash equilibria in differential games with impulse controls}
+      \field{volume}{190}
+      \field{year}{2021}
+      \field{pages}{999\bibrangedash 1022}
+      \range{pages}{24}
+    \endentry
+    \entry{sadana2021nash}{article}{}{}
+      \name{author}{3}{}{%
+        {{hash=dfe6ccf91f8bbffafbf3ed9087ec7e6e}{%
+           family={Sadana},
+           familyi={S\bibinitperiod},
+           given={Utsav},
+           giveni={U\bibinitperiod}}}%
+        {{hash=94c2b50dd3e3455125090a8306a3bff9}{%
+           family={Reddy},
+           familyi={R\bibinitperiod},
+           given={Puduru\bibnamedelima Viswanadha},
+           giveni={P\bibinitperiod\bibinitdelim V\bibinitperiod}}}%
+        {{hash=2c2696bf47f24fb6a8803134cdc9db74}{%
+           family={Zaccour},
+           familyi={Z\bibinitperiod},
+           given={Georges},
+           giveni={G\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Elsevier}%
+      }
+      \strng{namehash}{48dc9369efb540045e68445708003c8f}
+      \strng{fullhash}{48dc9369efb540045e68445708003c8f}
+      \strng{fullhashraw}{48dc9369efb540045e68445708003c8f}
+      \strng{bibnamehash}{48dc9369efb540045e68445708003c8f}
+      \strng{authorbibnamehash}{48dc9369efb540045e68445708003c8f}
+      \strng{authornamehash}{48dc9369efb540045e68445708003c8f}
+      \strng{authorfullhash}{48dc9369efb540045e68445708003c8f}
+      \strng{authorfullhashraw}{48dc9369efb540045e68445708003c8f}
+      \field{extraname}{2}
+      \field{sortinit}{5}
+      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{European Journal of Operational Research}
+      \field{number}{2}
+      \field{title}{Nash equilibria in nonzero-sum differential games with impulse control}
+      \field{volume}{295}
+      \field{year}{2021}
+      \field{pages}{792\bibrangedash 805}
+      \range{pages}{14}
+    \endentry
+    \entry{sadana2024contextual}{article}{}{}
+      \name{author}{2}{}{%
+        {{hash=dfe6ccf91f8bbffafbf3ed9087ec7e6e}{%
+           family={Sadana},
+           familyi={S\bibinitperiod},
+           given={Utsav},
+           giveni={U\bibinitperiod}}}%
+        {{hash=c2975f038ab8d01f2b88805f2a5d7ac8}{%
+           family={Delage},
+           familyi={D\bibinitperiod},
+           given={Erick},
+           giveni={E\bibinitperiod}}}%
+      }
+      \strng{namehash}{5acbf57303981d17a5b814c25c060250}
+      \strng{fullhash}{5acbf57303981d17a5b814c25c060250}
+      \strng{fullhashraw}{5acbf57303981d17a5b814c25c060250}
+      \strng{bibnamehash}{5acbf57303981d17a5b814c25c060250}
+      \strng{authorbibnamehash}{5acbf57303981d17a5b814c25c060250}
+      \strng{authornamehash}{5acbf57303981d17a5b814c25c060250}
+      \strng{authorfullhash}{5acbf57303981d17a5b814c25c060250}
+      \strng{authorfullhashraw}{5acbf57303981d17a5b814c25c060250}
+      \field{extraname}{2}
+      \field{sortinit}{6}
+      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Stochastic Programming Society (SPS) Newsletter}
+      \field{number}{1}
+      \field{title}{Contextual Stochastic Optimization Methods for Decision Making Under Uncertainty}
+      \field{volume}{3}
+      \field{year}{2024}
+      \field{pages}{11\bibrangedash 13}
+      \range{pages}{3}
+      \verb{urlraw}
+      \verb https://www.stoprog.org/pipermail/stoprog/attachments/20240715/d435fbbc/attachment-0001.pdf
+      \endverb
+      \verb{url}
+      \verb https://www.stoprog.org/pipermail/stoprog/attachments/20240715/d435fbbc/attachment-0001.pdf
+      \endverb
+    \endentry
+    \entry{rudnianski2016bayesian}{incollection}{}{}
+      \name{author}{3}{}{%
+        {{hash=7aa43ed650462ded79d0d83910f8910e}{%
+           family={Rudnianski},
+           familyi={R\bibinitperiod},
+           given={Michel},
+           giveni={M\bibinitperiod}}}%
+        {{hash=dfe6ccf91f8bbffafbf3ed9087ec7e6e}{%
+           family={Sadana},
+           familyi={S\bibinitperiod},
+           given={Utsav},
+           giveni={U\bibinitperiod}}}%
+        {{hash=c715136c9827950997a97eff49e8d1e4}{%
+           family={Bestougeff},
+           familyi={B\bibinitperiod},
+           given={Hélène},
+           giveni={H\bibinitperiod}}}%
+      }
+      \name{editor}{2}{}{%
+        {{hash=fe0acfb4000401e2aed1a7928e3f9715}{%
+           family={Petrosyan},
+           familyi={P\bibinitperiod},
+           given={Leon\bibnamedelima A.},
+           giveni={L\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+        {{hash=20b1f54baea705594d33a5b4877c8355}{%
+           family={Mazalov},
+           familyi={M\bibinitperiod},
+           given={Vladimir\bibnamedelima V.},
+           giveni={V\bibinitperiod\bibinitdelim V\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Springer}%
+      }
+      \strng{namehash}{47c142f74362f3200d1f9137e261fd10}
+      \strng{fullhash}{47c142f74362f3200d1f9137e261fd10}
+      \strng{fullhashraw}{47c142f74362f3200d1f9137e261fd10}
+      \strng{bibnamehash}{47c142f74362f3200d1f9137e261fd10}
+      \strng{authorbibnamehash}{47c142f74362f3200d1f9137e261fd10}
+      \strng{authornamehash}{47c142f74362f3200d1f9137e261fd10}
+      \strng{authorfullhash}{47c142f74362f3200d1f9137e261fd10}
+      \strng{authorfullhashraw}{47c142f74362f3200d1f9137e261fd10}
+      \strng{editorbibnamehash}{25dd9fdf435c3babe3175eda2a5477c6}
+      \strng{editornamehash}{25dd9fdf435c3babe3175eda2a5477c6}
+      \strng{editorfullhash}{25dd9fdf435c3babe3175eda2a5477c6}
+      \strng{editorfullhashraw}{25dd9fdf435c3babe3175eda2a5477c6}
+      \field{sortinit}{7}
+      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Recent advances in game theory and applications: European meeting on game theory, Saint Petersburg, Russia, 2015, and networking games and management, Petrozavodsk, Russia, 2015}
+      \field{title}{Bayesian networks and games of deterrence}
+      \field{year}{2016}
+      \field{pages}{201\bibrangedash 222}
+      \range{pages}{22}
+    \endentry
+    \entry{sadana2024mitigating}{article}{}{}
+      \name{author}{3}{}{%
+        {{hash=dfe6ccf91f8bbffafbf3ed9087ec7e6e}{%
+           family={Sadana},
+           familyi={S\bibinitperiod},
+           given={Utsav},
+           giveni={U\bibinitperiod}}}%
+        {{hash=c2975f038ab8d01f2b88805f2a5d7ac8}{%
+           family={Delage},
+           familyi={D\bibinitperiod},
+           given={Erick},
+           giveni={E\bibinitperiod}}}%
+        {{hash=a1518156a1af385eea9202bb17a9f255}{%
+           family={Georghiou},
+           familyi={G\bibinitperiod},
+           given={Angelos},
+           giveni={A\bibinitperiod}}}%
+      }
+      \strng{namehash}{31cab189371d01ca7c1fe955e110bc98}
+      \strng{fullhash}{31cab189371d01ca7c1fe955e110bc98}
+      \strng{fullhashraw}{31cab189371d01ca7c1fe955e110bc98}
+      \strng{bibnamehash}{31cab189371d01ca7c1fe955e110bc98}
+      \strng{authorbibnamehash}{31cab189371d01ca7c1fe955e110bc98}
+      \strng{authornamehash}{31cab189371d01ca7c1fe955e110bc98}
+      \strng{authorfullhash}{31cab189371d01ca7c1fe955e110bc98}
+      \strng{authorfullhashraw}{31cab189371d01ca7c1fe955e110bc98}
+      \field{sortinit}{8}
+      \field{sortinithash}{a231b008ebf0ecbe0b4d96dcc159445f}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{arXiv preprint arXiv:2409.19926}
+      \field{title}{Mitigating optimistic bias in entropic risk estimation and optimization}
+      \field{year}{2024}
+      \verb{urlraw}
+      \verb https://arxiv.org/pdf/2409.19926
+      \endverb
+      \verb{url}
+      \verb https://arxiv.org/pdf/2409.19926
+      \endverb
+    \endentry
+    \entry{sadana2024subsidizing}{article}{}{}
+      \name{author}{2}{}{%
+        {{hash=dfe6ccf91f8bbffafbf3ed9087ec7e6e}{%
+           family={Sadana},
+           familyi={S\bibinitperiod},
+           given={Utsav},
+           giveni={U\bibinitperiod}}}%
+        {{hash=2c2696bf47f24fb6a8803134cdc9db74}{%
+           family={Zaccour},
+           familyi={Z\bibinitperiod},
+           given={Georges},
+           giveni={G\bibinitperiod}}}%
+      }
+      \strng{namehash}{e102970624992a984aceac9e0a1ab2b9}
+      \strng{fullhash}{e102970624992a984aceac9e0a1ab2b9}
+      \strng{fullhashraw}{e102970624992a984aceac9e0a1ab2b9}
+      \strng{bibnamehash}{e102970624992a984aceac9e0a1ab2b9}
+      \strng{authorbibnamehash}{e102970624992a984aceac9e0a1ab2b9}
+      \strng{authornamehash}{e102970624992a984aceac9e0a1ab2b9}
+      \strng{authorfullhash}{e102970624992a984aceac9e0a1ab2b9}
+      \strng{authorfullhashraw}{e102970624992a984aceac9e0a1ab2b9}
+      \field{sortinit}{9}
+      \field{sortinithash}{0a5ebc79d83c96b6579069544c73c7d4}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{European Journal of Operational Research (under review)}
+      \field{note}{Submitted}
+      \field{title}{Subsidizing a New Technology: An Impulse Stackelberg Game Approach}
+      \field{year}{2024}
+      \verb{urlraw}
+      \verb https://arxiv.org/pdf/2407.05393
+      \endverb
+      \verb{url}
+      \verb https://arxiv.org/pdf/2407.05393
+      \endverb
+    \endentry
+  \enddatalist
+\endrefsection
+\endinput
+

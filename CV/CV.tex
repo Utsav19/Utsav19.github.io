@@ -1,0 +1,524 @@
+\documentclass[12pt]{article}
+% \renewcommand{\familydefault}{\sfdefault}
+\usepackage{calc}
+\usepackage{comment}
+\usepackage{url}
+\usepackage[english]{babel}
+% \usepackage{lipsum}
+\usepackage{multicol}
+\usepackage[official]{eurosym}
+\usepackage{tfrupee}
+% \usepackage[utf8]{inputenc}
+\usepackage{fontawesome5}
+\usepackage{etaremune}
+\usepackage[backend=biber,style=numeric,sorting=none]{biblatex}
+\addbibresource{publications.bib}
+\linespread{1.1}
+\makeatletter
+\newlength{\bibhang}
+\setlength{\bibhang}{1em} %1em}
+\newlength{\bibsep}
+ {\@listi \global\bibsep\itemsep \global\advance\bibsep by\parsep}
+\newenvironment{bibsection}%
+        {\begin{enumerate}{}{%
+%        {\begin{list}{}{%
+       \setlength{\leftmargin}{\bibhang}%
+       \setlength{\itemindent}{-\leftmargin}%
+       \setlength{\itemsep}{\bibsep}%
+       \setlength{\parsep}{\z@}%
+        \setlength{\partopsep}{0pt}%
+        \setlength{\topsep}{0pt}}}
+        {\end{enumerate}\vspace{-.6\baselineskip}}
+\makeatother
+\usepackage[paper=a4paper,
+            includefoot, % Uncomment to put page number above margin
+            marginparwidth=0mm,    % Length of section titles
+            marginparsep=1.5mm,       % Space between titles and text
+            margin=10mm,              % 25mm margins
+            includemp]{geometry}
+
+%% More layout: Get rid of indenting throughout entire document
+\setlength{\parindent}{0in}
+\usepackage[shortlabels]{enumitem}
+\usepackage{fancyhdr,lastpage}
+\pagestyle{fancy}
+\fancyhf{}\renewcommand{\headrulewidth}{0pt}
+\fancyfootoffset{\marginparsep+\marginparwidth}
+\newlength{\footpageshift}
+\setlength{\footpageshift}
+          {0.5\textwidth+0.5\marginparsep+0.5\marginparwidth-2in}
+\lfoot{\hspace{\footpageshift}%
+       \parbox{4in}{\, \hfill %
+                    \arabic{page} of \protect\pageref*{LastPage} % +LP
+%                    \arabic{page}                               % -LP
+                    \hfill \,}}
+\usepackage{color,hyperref}
+% \definecolor{darkblue}{rgb}{0.0,0.0,0.3}
+\hypersetup{colorlinks,breaklinks,
+            linkcolor=magenta,urlcolor=magenta,
+            anchorcolor=magenta,citecolor=magenta}
+\usepackage{tikz}
+\newcommand{\makeheading}[2][]%
+        {\hspace*{-\marginparsep minus \marginparwidth}%
+         \begin{minipage}[t]{\textwidth+\marginparwidth+\marginparsep}%
+             {\large \bfseries #2 \hfill #1}\\[-0.15\baselineskip]%
+                 \rule{\columnwidth}{1pt}%
+         \end{minipage}}
+% \newcommand{\makeheading}[2][]%
+%         {#1 \hfill #2}
+
+% The section headings
+%
+% Usage: \section{section name}
+% \renewcommand{\section}[1]{\pagebreak[3]%
+%     \hyphenpenalty=10000%
+%     \vspace{1.3\baselineskip}%
+%     \phantomsection\addcontentsline{toc}{section}{#1}%
+%     \noindent\llap{\scshape\smash{\parbox[t]{\marginparwidth}{\raggedright #1}}}%
+%     \vspace{-\baselineskip}\par}
+
+    
+\renewcommand{\section}[1]{
+\bigskip
+  \begin{Large}
+  {\textsc{\textbf{#1}}}
+  \end{Large}
+  \hrulefill
+  \medskip
+  \\
+}
+
+% An itemize-style list with lots of space between items
+\newenvironment{outerlist}[1][\enskip\textbullet]%
+        {\begin{itemize}[#1,leftmargin=*]}{\end{itemize}%
+         \vspace{-.6\baselineskip}}
+
+\newenvironment{loneinnerlist}[1][\enskip\textbullet]%
+        {\begin{itemize}[#1,leftmargin=*,parsep=0pt,itemsep=0pt,topsep=0pt,partopsep=0pt]}
+        {\end{itemize}\vspace{-.6\baselineskip}}
+
+        
+% An itemize-style list with medium space between items
+\newenvironment{midlist}[1][\enskip\textbullet]%
+        {\begin{itemize}[#1,leftmargin=*,parsep=0pt,itemsep=4pt,topsep=0pt,partopsep=0pt]}
+        {\end{itemize}}
+        
+% An environment IDENTICAL to midlist that has better pre-list spacing
+% when used as the first thing in a \section
+\newenvironment{lonemidlist}[1][\enskip\textbullet]%
+        {\begin{itemize}[#1,leftmargin=*,parsep=0pt,itemsep=4pt,topsep=0pt,partopsep=0pt]}
+        {\end{itemize}\vspace{-.6\baselineskip}}
+
+
+% To add some paragraph space between lines.
+% This also tells LaTeX to preferably break a page on one of these gaps
+% if there is a needed pagebreak nearby.
+\newcommand{\blankline}{\quad\pagebreak[3]}
+\newcommand{\halfblankline}{\quad\vspace{-0.5\baselineskip}\pagebreak[3]}
+
+% Uses hyperref to link DOI
+\newcommand\doilink[1]{\href{http://dx.doi.org/#1}{#1}}
+\newcommand\doi[1]{doi:\doilink{#1}}
+
+% For \url{SOME_URL}, links SOME_URL to the url SOME_URL
+\providecommand*\url[1]{\href{#1}{#1}}
+% Same as above, but pretty-prints SOME_URL in teletype fixed-width font
+\renewcommand*\url[1]{\href{#1}{\texttt{#1}}}
+
+% For \email{ADDRESS}, links ADDRESS to the url mailto:ADDRESS
+\providecommand*\email[1]{\href{mailto:#1}{#1}}
+% Same as above, but pretty-prints ADDRESS in teletype fixed-width font
+%\renewcommand*\email[1]{\href{mailto:#1}{\texttt{#1}}}
+
+%\providecommand\BibTeX{{\rm B\kern-.05em{\sc i\kern-.025em b}\kern-.08em
+%    T\kern-.1667em\lower.7ex\hbox{E}\kern-.125emX}}
+%\providecommand\BibTeX{{\rm B\kern-.05em{\sc i\kern-.025em b}\kern-.08em
+%    \TeX}}
+\providecommand\BibTeX{{B\kern-.05em{\sc i\kern-.025em b}\kern-.08em
+    \TeX}}
+\providecommand\Matlab{\textsc{Matlab}}
+\newcommand{\homepage}{https://homes.cs.washington.edu/~kusupati}
+%%%%%%%%%%%%%%%%%%%%%%%% End Helper Commands %%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%%%%%% Begin CV Document %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\usepackage[margin = 1.5cm, font = small, labelfont = bf, labelsep = period]{caption}
+\begin{document}
+\begin{tikzpicture}[remember picture,overlay]
+      \node[anchor=north, xshift=6cm, yshift= -0.25cm] at (current page.north) {\textit{Last update: \today}};
+\end{tikzpicture}
+\begin{center}
+\begin{LARGE}
+\vspace{-1em}
+% Curriculum Vitae\\
+\smallskip
+\vspace{0.1em}
+\textbf{{Utsav Sadana}}
+\end{LARGE}
+\end{center}
+\smallskip
+\vspace{1mm}
+\begin{midlist}
+    \item Assistant Professor\\
+ Département d’Informatique et de Recherche Opérationnelle (DIRO) \\
+  Université de  Montréal\\
+ \faIcon{map-marker-alt}  Pavilion André Aisenstadt, office: 3383,  H3T 1N8, Montréal, QC, Canada 
+
+ \smallskip
+ \faIcon{link}~\href{https://utsav19.github.io}{Webpage} \quad \faIcon{at}~\email{utsav.sadana@umontreal.ca}\quad  \faIcon{github}~\href{https://github.com/Utsav19}{github.com/utsav19} \quad  \faGraduationCap~\href{https://scholar.google.com/citations?user=zNK9YqoAAAAJ&hl=en}{Google Scholar}\smallskip\\
+ \end{midlist}
+ 
+\section{Education}
+\begin{midlist}
+    \item Ph.D.,  Management Science, HEC Montr\'eal, Montréal, Canada \hfill{Aug. 2017 -- May 2021}\\
+Thesis title: Essays on Differential Games with Impulse Control\\
+Advisor: Prof.~Georges Zaccour
+
+\item Visiting Ph.D. student, University of Illinois at Urbana-Champaign,  USA \hfill{Sep. 2019 -- Feb.~2020}
+\item  Dual Degree, Indian Institute of Technology Kanpur, India \hfill{Jul. 2012 -- May 2017}\\
+B.Tech, Materials Science and Engineering\\
+M.S., Economics
+\end{midlist}
+
+
+
+% 
+        % \href{https://chairetheoriedesjeux.hec.ca/en/about/chairholder/}{Prof.~Georges Zaccour}\\ 
+        
+
+% \\ Advisor: Prof.~Tamer Ba\c{s}ar\\
+
+% \href{http://tamerbasar.csl.illinois.edu}{Prof.~Tamer Ba\c{s}ar}\\
+
+
+% M.S. Thesis: ``\textit{Empirical Estimation of Corruption in the Judiciary of Bangladesh}''\\
+% Advisor: Dr.~Debayan Pakrashi\\
+
+% \href{http://www.debayanpakrashi.com/}{Dr.~Debayan Pakrashi}
+% \section{Fields of Interest}
+% My current research interests lie in understanding the value of  I use data and understanding optimal in the broad field of span the fields of  game theory, optimal control, optimization, and deep learning. My research has contributed in In my research, I have used tools from game theory, optimal control, optimization, and deep learning. to formulate models and algorithms that can address issu \\
+
+\section{Professional Appointments}
+\vspace{-5mm}
+\begin{midlist}
+\item IVADO Reseacher \hfill {August 2024 - }
+\item Member of GERAD \hfill {August 2024 - }
+\item Member of CIRRELT \hfill {June 2024 - }
+    \item Assistant Professor, DIRO, Université de Montréal \hfill {July 2023 - }
+    \item Postdoctoral Fellow (FRQNT, IVADO-funded position), McGill University \hfill {June 2021 -- June 2023}
+    \item Lecturer,  McGill University \hfill {May 2022 -- June 2022}
+    \item Researcher, ORT France, Paris \hfill {Summer 2015}
+\end{midlist}
+% IVADO Project: ``\textit{Data-driven demand learning and sharing strategies for two-sided online marketplaces}''\\
+        % Mentors: Prof.~Mehmet Gumus, Prof.~Erick Delage,  Prof.~Angelos Georghiou\\
+        
+        % \href{https://www.mcgill.ca/desautels/mehmet-gumus}{Prof.~Mehmet Gumus}, \href{http://web.hec.ca/pages/erick.delage/}{Prof.~Erick Delage} \& \href{http://ucyweb.ucy.ac.cy/dir/el/cb-profile/ageorg07}{Prof.~Angelos Georghiou} \\
+ 
+% \textbf{Mathematics and Statistics Help Center, HEC Montréal Library} \hfill {May 2019 - June 2019}\\
+% Workshop Assistance \\
+
+
+
+
+\section{Selected Awards and Honors}
+\vspace{-5mm}
+\begin{midlist}
+\item Teaching Excellence Award, Association of Postdoctoral Fellows, McGill University \hfill{2022}
+\item Finalist for the ``\textit{Young Scholar Best Paper Award}'' at ISDG, Porto, Portugal \hfill{2022}
+\item GERAD Postdoctoral Fellowship   (\$30000) \hfill{2021 -- 2022}
+
+\item FRQNT  Postdoctoral Research Scholarship (B3X)  (\$90000)  \hfill{2021 -- 2023}
+
+\item PBEEE  Quebec-India Doctoral Research Scholarship (\$45000)   \hfill{2019 -- 2021} 
+\item  FRQNT Doctoral Research Scholarship (B2X) (\$63000) \hfill{2019 -- 2021}  
+\item  FRQNT International Internship Program  (\$15000) \hfill{2018} 
+\item  Fondation J.A. DeS\`eve Bursary (PhD), HEC Montréal for academic excellence (\$11000)\hfill{2018}
+% \item  J.A. DeS\`eve Admission Scholarship,  HEC Montr\'eal Foundation.  \hfill{2017 -- 2021}     
+% \item  Admission Scholarship, Chair of Game Theory and Management, GERAD \& HEC Montr\'eal. \hfill{2017 -- 2021}
+\item  Graduate Research Award (MHRD, India) to pursue Masters at IIT Kanpur  (\$2500)\hfill{2016} %
+% \item Merit-cum-Means Scholarship, IIT Kanpur  \begin{footnotesize}[\rupee180,000]\end{footnotesize} \hfill{2013, 2014, 2015} %
+\item Summer Research Scholarship, ORT France, Paris (\$3500) \hfill{2015} \\%
+%  \item Secured $3^{rd}$ position amongst 90 teams in Manthan National Youth Competition, India \hfill{2013}
+\end{midlist}
+\newpage 
+\section{Grants}
+\vspace{-5mm}
+\begin{midlist}
+\item Discovery Grant \hfill{2024-2029}\\
+Funding agency:  Natural Sciences and Engineering Research Council of Canada (NSERC)\\
+Project: Decision-making in dynamical systems\\
+Amount: \$170,000 over five years\\
+Role: Principal Investigator
+\item Discovery Launch Supplement \hfill{2024-2029}\\
+Funding agency:  Natural Sciences and Engineering Research Council of Canada (NSERC)\\
+Project: Decision-making in dynamical systems\\
+Amount: \$12,500 over five years\\
+Role: Principal Investigator
+\item Mitacs Acceleration \hfill{2024-2026}\\
+Funding agency:  Mitacs\\
+Project: Integration of Environmental Data into Urban Planning: A
+Mathematical Optimization Approach\\
+Amount: \$45,000 over two years\\
+Principal Investigator: Prof.~Margarida Carvalho\\
+Role: Co-investigator\\ 
+Partner organization:  Éco-Pivot, a start-up in Montréal 
+\item Start-up fund \hfill{2023-2026}\\
+Funding agency:  Département d’Informatique et de Recherche Opérationnelle (DIRO)\\
+Project: Hire graduate students\\
+Amount: \$50000 over three years\\
+Role: Principal Investigator
+\end{midlist}
+
+
+\section{Journal Papers}
+\label{sec:pubs}
+\vspace{-6mm}
+\begin{enumerate}[label=\textbf{[J\arabic*]}]
+\item \fullcite{sadana2025survey}
+\begin{midlist}
+    \item  \textbf{More than 240 citations}
+\end{midlist}
+\vspace{2mm}
+\item \fullcite{sadana2023value}
+    \begin{lonemidlist}
+    \item \textbf{Featured Article (30\% articles)}
+\end{lonemidlist}
+\vspace{2mm}
+\item \fullcite{sadana2023feedback}
+\begin{lonemidlist}
+   \item \textbf{Finalist}, Best Paper Award, International Symposium on Dynamic Games, Porto, 2022
+\end{lonemidlist}
+\vspace{2mm}
+\item \fullcite{sadana2021sampled}
+\item \fullcite{sadana2021nash}
+\end{enumerate}
+\newpage
+\section{Invited Newsletter Contributions}
+\vspace{-5mm}
+\begin{enumerate}[label=\textbf{[N\arabic*]}]
+\item \fullcite{sadana2024contextual}
+\end{enumerate}
+\section{Book Chapter}
+\vspace{-5mm}
+\begin{enumerate}[label=\textbf{[B\arabic*]}]
+\item \fullcite{rudnianski2016bayesian}
+\end{enumerate}
+\section{Under Review}
+\vspace{-5mm}
+\begin{enumerate}[label=\textbf{[P\arabic*]}]
+\item \fullcite{sadana2024mitigating}
+\item \fullcite{sadana2024subsidizing}
+\end{enumerate}
+
+\section{Talks and Seminars}
+\vspace{-3mm}
+\begin{lonemidlist}
+\item Stochastic Programming Society Virtual Seminar Series \hfill{2025}\\
+``\textit{Towards Decision-Focused Learning:
+Advances in Contextual Optimization}''\\
+\textbf{(\textbf{Invited Tutorial})}
+\item INFORMS Computing Society Conference (invited), Toronto, Canada \hfill{2025}\\
+``\textit{What's hidden in the tails? Revealing and reducing optimistic bias in entropic risk estimation}\\\textit{ and optimization}''
+\item Dynamic Games and Applications Seminar (invited), Montréal, Canada \hfill{2024}\\
+``\textit{Subsidizing a New Technology: An Impulse Stackelberg Game Approach}''
+\item International Symposium on Mathematical Programming (invited), Montréal, Canada \hfill{2024}\\
+``\textit{Data-driven decision making under uncertainty with entropic risk measure}''
+\item  International Symposium on Dynamic Games, Valladolid, Spain
+\hfill{2024}\\
+``\textit{Subsidizing a New Technology: An Impulse Stackelberg Game Approach}''
+\item GERAD Seminar, Montréal, Canada \hfill{2024}\\
+``\textit{Nash Equilibria in Two-Player Differential Games with Impulse Control}''
+% \item International Symposium on Dynamic Games and Applications,Montréal \hfill{2024}
+\item Workshop on Games and Optimization, Montréal, Canada
+\hfill{2024}\\
+``\textit{Feedback Nash equilibria in differential games with Impulse control}''
+\item Optimization Days, Montréal, Canada
+\hfill{2024}\\
+``\textit{Data-driven decision making under uncertainty with entropic risk measure}''
+\item CORS Annual Conference/Optimization Days, Montréal, Canada
+\hfill{2023}\\
+\textit{A Review of Contextual Stochastic Optimization II: Integrated Learning and Optimization}
+\item Contextual optimization workshop, Montréal, Canada
+\hfill{2023}\\
+``\textit{A Review of Contextual Stochastic Optimization: Integrated Learning and Optimization}''
+\item  DS4DM Coffee Talk, Montréal, Canada
+\hfill{2023}\\
+``\textit{The Value of Randomized Strategies in Distributionally Robust Risk-Averse\\ Network Interdiction
+Problems}''
+\item  Meet a GERAD Researcher Seminar, Montréal, Canada \hfill{2023}\\
+``\textit{Nash Equilibria in Two-Player Differential Games with Impulse Control}''
+\item  DIRO Seminar (invited), Université de Montréal, Canada \hfill{2023}\\
+``\textit{Decision making in dynamic multi-agent systems with limited resources}''
+\item  International Symposium on Dynamic Games, Porto, Portugal
+\hfill{2022}\\
+``\textit{Feedback Nash Equilibria in Differential games with Impulse Control}''
+\item  CORS/INFORMS International Conference, Vancouver, Canada \hfill{2022}\\
+``\textit{Decision-focused Learning for a Newsvendor with Side Information}''
+\item CORS Annual Conference  (virtual) \hfill{2021}\\
+``\textit{The value of randomized strategies in distributionally robust risk averse\\ network interdiction
+problems}''
+\item INFORMS Virtual Annual Meeting (invited) \hfill{2020}\\
+``\textit{The value of randomized strategies in distributionally robust risk averse\\ network interdiction
+problems}''
+\item Virtual Informal Systems Seminar (invited), McGill and GERAD, Montréal, Canada \hfill{2020}\\
+``\textit{Open-loop Nash equilibria in nonzero-sum differential games with impulse controls}''
+\item Workshop on Differential Games, Stony Brook Center for Game Theory (invited), NY, USA. \hfill{2020}\\
+``\textit{Open-loop Nash equilibria in differential games with impulse controls}''
+\item  CRC - Decision Making Under Uncertainty Seminar Series (virtual) \hfill{2020}\\
+``\textit{The value of randomized strategies in distributionally robust risk averse\\ network interdiction
+problems}''
+\item  11th Workshop on Dynamic Games in Management Science, Montr\'eal, Canada \hfill{2019}\\
+''\textit{Nash Equilibria in Non-Zero-Sum Differential Games with Impulse Control}''
+\item Optimization Days, Montr\'eal, Canada \hfill{2019}\\
+``\textit{Is it time to intervene? An impulse control approach to dynamic games}''\\
+\end{lonemidlist}
+
+\vspace{1mm}
+\section{Courses Taught}
+\vspace{-3mm}
+\begin{lonemidlist}
+\item IFT-6575 Methods of Operations Research, Université de Montréal \hfill{Fall 2024}\\
+Instructor
+
+\item IFT-6521 Dynamic Programming, Université de Montréal \hfill{Winter 2024, 2025}\\
+Instructor
+\item MGCR-271: Business Statistics, McGill University \hfill{Summer 2022}\\
+Instructor\\
+\end{lonemidlist}
+
+\section{Supervision}
+\vspace{-3mm}
+\begin{midlist}
+\item Maël Charpentier, Master's student, Université de Montréal, Canada \hfill{Fall 2024 -}\\
+co-supervised with Prof.~Margarida Carvalho
+% \item Mamadou Saliou Diallo, PhD student, Université de Montréal, Canada \hfill{Fall 2024 -}\\
+% co-supervised with Prof.~Georges Zaccour
+\item Gabriel-Fortin Leblanc, PhD student, Université de Montréal, Canada \hfill{Fall 2024 -}\\
+co-supervised with Prof.~Emma Frejinger
+\item Julien-Charles Cyr, Master's student, Université de Montréal, Canada \hfill{Winter 2024 -}
+\item Oscar Lavolet, Internship,  Université de Montréal, Canada \hfill{Summer 2024}
+\item Yug Garg, Internship, McGill University (remote) \hfill{Summer 2022}
+\item Nacer Fendri,  Internship, GERAD (HEC Montréal) \hfill{Summer 2022}\\
+co-supervised with Prof.~Georges Zaccour
+\end{midlist}
+
+\section{Event Organization}
+\vspace{-3mm}
+\begin{midlist}
+\item {Lead organizer}, 5 day Workshop: \textit{Contextual Stochastic Optimization: From Data to Decisions}, Banff International Research Station, Alberta, Canada \hfill  2026
+\begin{itemize}[leftmargin=1.5em]
+    \item 40 experts on AI-driven decision-making have expressed interest in participating.
+\end{itemize}
+\item Co-chair, Cluster: \textit{Data-driven decision making}, Canadian Operations Research Society conference (CORS), Edmonton \hfill{2025}
+\item Co-organizer, CRM Workshop on Data Science and Combinatorial Optimization, Montréal \hfill{2025}
+\item Session chair, CORS/INFORMS International Conference, Vancouver \hfill{2022}
+\item Co-organizer, Dynamic Games and Applications Seminars (virtual) \hfill{2020 -- 2021}\\
+\end{midlist}
+
+\section{Academic Service}
+\vspace{-3mm}
+\begin{midlist}
+\item Member of several FRQNT committees for evaluation of scholarship and grant applications \hfill{2025}
+\item PhD thesis defense jury member
+\vspace{1mm}
+\begin{midlist}
+\item Charly Robinson Larocca, Data-Driven Large Neighbourhood Search for Combinatorial
+Optimization Problems, DIRO, Université de Montréal \hfill{2025}
+\item Mathieu Duchesneau, Learning Equivalence Hash Functions, DIRO, Université de Montréal \hfill{2025}
+\end{midlist}
+\item Master's thesis  jury member
+\vspace{1mm}
+\begin{midlist}
+\item Béatrice Hajjar, The Locomotive Routing Problem at CN: A New Approach for More Robust Solutions, DIRO, Université de Montréal\hfill{2025}
+\item Cheikh Abdallahi Ahmed, DistrictNet: Optimisation des districts avec l’apprentissage automatique pour
+une planification efficace à long terme,  Polytechnique Montréal \hfill{2024}
+\item Massimo Pietracupa, Detecting Pre-Error States and Process Deviations Resulting from Cognitive Overload in Aircraft Pilots, DIRO, Université de Montréal \hfill{2024}
+\end{midlist}
+\item PhD proposal defense jury member, DIRO, Université de Montréal 
+\vspace{1mm}
+\begin{midlist}
+\item Jean Laprès-Chartrand, Application of optimal control to aquaponic systems (Predoc III) 
+ \hfill{2024}
+\item Warley Almeida Silva, Dynamic Location Problems with Decision-Dependent Demands, Customer Preferences and Market Competition (Predoc III) \hfill{2023}
+\item Gregory De Salaberry Seljak, Random Quasi Monte Carlo Methods (Predoc II)  \hfill{2024}
+\end{midlist}
+\vspace{2mm}
+\item Jury member, Communicating OR/MS: The Scientific Writing Activity, GERAD \& CIRRELT \hfill{2024}
+\vspace{2mm}
+\item Admissions Committee, DIRO, Université de Montréal \hfill{2023--2025}
+\vspace{2mm}
+\item  FRQNT Doctoral award committee \hfill{2024}
+\vspace{2mm}
+\item  NSERC (CGS) Master's award committee, McGill University  \hfill{2022, 2023}
+\vspace{2mm}
+\item Reviewer for Operations Research, Transportation Science, INFORMS Journal on Computing, European Journal of Operational Research, Production and Operations Management, Dynamic Games and Applications, Journal of Optimization Theory and Applications, Journal of Operations Research Society, IEEE Transactions on Automatic Control, European Economic Review,  Mathematical Methods of Operations Research, Operations Research Letters, The IEEE Control System Letters, and IEEE Transactions on Systems, Man, and Cybernetics: Systems\\
+% \item \textbf{Session assistant} Allerton Control Conference, Illinois, U.S., 2019\\
+\end{midlist}
+
+\section{Personal}
+{Citizenship}: India\\
+{Languages}: Hindi (native), English (fluent), French (lower intermediate)
+\\
+% \textbf{Hobbies}: Poetry, Tennis, Badminton, Board Games
+\end{document}
+% \section{Social Initiatives \& Mentorship}
+ % \textbf{Workshop, Mathematics and Statistics Help Center, HEC Montréal} \hfill{Apr. 2019 -- May 2019}
+ % \begin{midlist}
+ % \item Prepared content (lecture notes, handouts, and slides that covered basics of linear algebra and probability theory) for conducting a workshop to help  the incoming  Master's students, in the field of economics, finance, and quantitative methods in management.\\
+ % \end{midlist}
+
+ % \textbf{Inclusive Development of Informal Sector Workers}  \hfill{May 2013 -- Oct. 2013}\\
+ % Team Project, Citizens for Accountable Governance (CAG)
+ % \begin{midlist}
+ % \item Proposed structural layout for registration and grievance redressal of Informal Sector workers.
+ % \end{midlist}
+ % \vspace{0.2cm}
+
+% \textbf{Instructor, Hindi Learning Classes}  \hfill{\emph{[Feb'14 - Mar'14]}}\\
+% Hindi Literary Society, IIT Kanpur
+% \begin{innerlist}
+% \item[\raisebox{0.25ex}{\tiny$\bullet$}]Voluntarily offered Hindi learning classes to 8 foreign exchange students and staff of IIT Kanpur.
+% \end{innerlist}
+% \vspace{0.2cm}
+
+% \textbf{Student Guide}\hfill{\emph{[July'13 - May'14]}}\\
+% Counselling Service, IIT Kanpur
+% \begin{innerlist}
+% \item[\raisebox{0.25ex}{\tiny$\bullet$}]Mentored and guided 6 freshmen in adjusting to the academic, cultural, and social life of the campus.
+% \end{innerlist}
+% \vspace{0.2cm}
+% \textbf{Editorial Board Member}\hfill{\emph{[July'13 - May'14]}}\\
+% Nirvaak, Campus Newsletter, IIT Kanpur
+% \begin{innerlist}
+% \item[\raisebox{0.25ex}{\tiny$\bullet$}] Worked in a team of 10 students and spearheaded the publishing of the first campus newsletter, \textit{Nirvaak,} that addresses the critical social and political issues faced by the campus community.
+% \end{innerlist}
+%\section{Hobbies}
+%Cricket, badminton, reading and writing poetry. 
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%% End CV Document %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------%
+% The following is copyright and licensing information for
+% redistribution of this LaTeX source code; it also includes a liability
+% statement. If this source code is not being redistributed to others,
+% it may be omitted. It has no effect on the function of the above code.
+%----------------------------------------------------------------------%, .
+% Copyright (c) 2007, 2008, 2009, 2010, 2011 by Theodore P. Pavlic
+% Copyright (c) 2020 by Aditya Kusupati
+%
+% Unless otherwise expressly stated, this work is licensed under the
+% Creative Commons Attribution-Noncommercial 3.0 United States License. To
+% view a copy of this license, visit
+% http://creativecommons.org/licenses/by-nc/3.0/us/ or send a letter to
+% Creative Commons, 171 Second Street, Suite 300, San Francisco,
+% California, 94105, USA.
+%
+% THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS
+% OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF
+% MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.
+% IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY
+% CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT,
+% TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE
+% SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+%----------------------------------------------------------------------%
