@@ -1,28 +1,33 @@
 \documentclass[12pt]{article}
 % \renewcommand{\familydefault}{\sfdefault}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
 \usepackage{calc}
 \usepackage{comment}
 \usepackage{url}
 \usepackage[english]{babel}
 % \usepackage{lipsum}
+\usepackage{microtype}
 \usepackage{multicol}
 \usepackage[official]{eurosym}
 \usepackage{tfrupee}
 % \usepackage[utf8]{inputenc}
 \usepackage{fontawesome5}
 \usepackage{etaremune}
-\usepackage[backend=biber,style=numeric,sorting=none]{biblatex}
+\usepackage{csquotes}
+\usepackage[backend=biber,style=apa]{biblatex}
+\DeclareLanguageMapping{english}{english-apa}
 \addbibresource{publications.bib}
 \linespread{1.1}
 \makeatletter
-\newlength{\bibhang}
-\setlength{\bibhang}{1em} %1em}
+\newlength{\bibsectionhang}
+\setlength{\bibsectionhang}{1em} %1em}
 \newlength{\bibsep}
  {\@listi \global\bibsep\itemsep \global\advance\bibsep by\parsep}
 \newenvironment{bibsection}%
         {\begin{enumerate}{}{%
 %        {\begin{list}{}{%
-       \setlength{\leftmargin}{\bibhang}%
+        \setlength{\leftmargin}{\bibsectionhang}%
        \setlength{\itemindent}{-\leftmargin}%
        \setlength{\itemsep}{\bibsep}%
        \setlength{\parsep}{\z@}%
@@ -39,8 +44,17 @@
 
 %% More layout: Get rid of indenting throughout entire document
 \setlength{\parindent}{0in}
+\setlength{\parskip}{0.15em}
+\setlength{\emergencystretch}{2em}
 \usepackage[shortlabels]{enumitem}
 \usepackage{fancyhdr,lastpage}
+\usepackage[dvipsnames]{xcolor}
+\usepackage{hyperref}
+\definecolor{cvaccent}{HTML}{1F4E79}
+\definecolor{cvmuted}{HTML}{4D4D4D}
+\hypersetup{colorlinks,breaklinks,
+                        linkcolor=cvaccent,urlcolor=cvaccent,
+                        anchorcolor=cvaccent,citecolor=cvaccent}
 \pagestyle{fancy}
 \fancyhf{}\renewcommand{\headrulewidth}{0pt}
 \fancyfootoffset{\marginparsep+\marginparwidth}
@@ -52,12 +66,6 @@
                     \arabic{page} of \protect\pageref*{LastPage} % +LP
 %                    \arabic{page}                               % -LP
                     \hfill \,}}
-\usepackage{color,hyperref}
-% \definecolor{darkblue}{rgb}{0.0,0.0,0.3}
-\hypersetup{colorlinks,breaklinks,
-            linkcolor=magenta,urlcolor=magenta,
-            anchorcolor=magenta,citecolor=magenta}
-\usepackage{tikz}
 \newcommand{\makeheading}[2][]%
         {\hspace*{-\marginparsep minus \marginparwidth}%
          \begin{minipage}[t]{\textwidth+\marginparwidth+\marginparsep}%
@@ -67,25 +75,12 @@
 % \newcommand{\makeheading}[2][]%
 %         {#1 \hfill #2}
 
-% The section headings
-%
-% Usage: \section{section name}
-% \renewcommand{\section}[1]{\pagebreak[3]%
-%     \hyphenpenalty=10000%
-%     \vspace{1.3\baselineskip}%
-%     \phantomsection\addcontentsline{toc}{section}{#1}%
-%     \noindent\llap{\scshape\smash{\parbox[t]{\marginparwidth}{\raggedright #1}}}%
-%     \vspace{-\baselineskip}\par}
-
-    
 \renewcommand{\section}[1]{
-\bigskip
-  \begin{Large}
-  {\textsc{\textbf{#1}}}
-  \end{Large}
-  \hrulefill
-  \medskip
-  \\
+\vspace{0.25em}
+\noindent{\normalfont\large\bfseries\color{cvaccent} #1}\par
+\vspace{-0.24em}
+\noindent\textcolor{cvaccent!80!black}{\rule{0.55\textwidth}{1.1pt}}
+\vspace{0.48em}
 }
 
 % An itemize-style list with lots of space between items
@@ -100,13 +95,13 @@
         
 % An itemize-style list with medium space between items
 \newenvironment{midlist}[1][\enskip\textbullet]%
-        {\begin{itemize}[#1,leftmargin=*,parsep=0pt,itemsep=4pt,topsep=0pt,partopsep=0pt]}
+        {\begin{itemize}[#1,leftmargin=*,parsep=0pt,itemsep=4pt,topsep=2pt,partopsep=0pt]}
         {\end{itemize}}
         
 % An environment IDENTICAL to midlist that has better pre-list spacing
 % when used as the first thing in a \section
 \newenvironment{lonemidlist}[1][\enskip\textbullet]%
-        {\begin{itemize}[#1,leftmargin=*,parsep=0pt,itemsep=4pt,topsep=0pt,partopsep=0pt]}
+        {\begin{itemize}[#1,leftmargin=*,parsep=0pt,itemsep=5pt,topsep=2pt,partopsep=0pt]}
         {\end{itemize}\vspace{-.6\baselineskip}}
 
 
@@ -143,33 +138,28 @@
 %%%%%%%%%%%%%%%%%%%%%%%%% Begin CV Document %%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \usepackage[margin = 1.5cm, font = small, labelfont = bf, labelsep = period]{caption}
 \begin{document}
-\begin{tikzpicture}[remember picture,overlay]
-      \node[anchor=north, xshift=6cm, yshift= -0.25cm] at (current page.north) {\textit{Last update: \today}};
-\end{tikzpicture}
 \begin{center}
-\begin{LARGE}
-\vspace{-1em}
-% Curriculum Vitae\\
-\smallskip
-\vspace{0.1em}
-\textbf{{Utsav Sadana}}
-\end{LARGE}
+{\huge\bfseries Utsav Sadana\par}
+\vspace{0.12em}
+% {\large Assistant Professor\par}
+\vspace{0.18em}
+% {\color{cvaccent}\rule{0.46\textwidth}{1.05pt}\par}
+\vspace{0.5em}
+{\small Last updated: \today\par}
 \end{center}
-\smallskip
-\vspace{1mm}
-\begin{midlist}
-    \item Assistant Professor\\
- Département d’Informatique et de Recherche Opérationnelle (DIRO) \\
-  Université de  Montréal\\
- \faIcon{map-marker-alt}  Pavilion André Aisenstadt, office: 3383,  H3T 1N8, Montréal, QC, Canada 
+\vspace{0.3em}
+\noindent\textbf{Assistant Professor}\\
+Department of Computer Science and Operations Research (DIRO) \\
+Université de Montréal\\
+\faIcon{map-marker-alt} Pavilion André Aisenstadt, office: 3383, H3T 1N8, Montréal, QC, Canada
 
- \smallskip
- \faIcon{link}~\href{https://utsav19.github.io}{Webpage} \quad \faIcon{at}~\email{utsav.sadana@umontreal.ca}\quad  \faIcon{github}~\href{https://github.com/Utsav19}{github.com/utsav19} \quad  \faGraduationCap~\href{https://scholar.google.com/citations?user=zNK9YqoAAAAJ&hl=en}{Google Scholar}\smallskip\\
- \end{midlist}
+\smallskip
+\noindent\faIcon{link}~\href{https://utsav19.github.io}{Webpage} \quad \faIcon{at}~\email{utsav.sadana@umontreal.ca} \quad \faIcon{github}~\href{https://github.com/Utsav19}{github.com/utsav19} \quad \faGraduationCap~\href{https://scholar.google.com/citations?user=zNK9YqoAAAAJ&hl=en}{Google Scholar}
+\vspace{0.5em}
  
 \section{Education}
 \begin{midlist}
-    \item Ph.D.,  Management Science, HEC Montr\'eal, Montréal, Canada \hfill{Aug. 2017 -- May 2021}\\
+        \item Ph.D.,  Management Science, HEC Montr\'eal, Montréal, Canada \hfill{Aug. 2017 -- May 2021}\\
 Thesis title: Essays on Differential Games with Impulse Control\\
 Advisor: Prof.~Georges Zaccour
 
@@ -178,8 +168,7 @@ Advisor: Prof.~Georges Zaccour
 B.Tech, Materials Science and Engineering\\
 M.S., Economics
 \end{midlist}
-
-
+\vspace{0.4em}
 
 % 
         % \href{https://chairetheoriedesjeux.hec.ca/en/about/chairholder/}{Prof.~Georges Zaccour}\\ 
@@ -198,14 +187,13 @@ M.S., Economics
 % My current research interests lie in understanding the value of  I use data and understanding optimal in the broad field of span the fields of  game theory, optimal control, optimization, and deep learning. My research has contributed in In my research, I have used tools from game theory, optimal control, optimization, and deep learning. to formulate models and algorithms that can address issu \\
 
 \section{Professional Appointments}
-\vspace{-5mm}
 \begin{midlist}
-\item IVADO Reseacher \hfill {August 2024 - }
-\item Member of GERAD \hfill {August 2024 - }
-\item Member of CIRRELT \hfill {June 2024 - }
-    \item Assistant Professor, DIRO, Université de Montréal \hfill {July 2023 - }
-    \item Postdoctoral Fellow (FRQNT, IVADO-funded position), McGill University \hfill {June 2021 -- June 2023}
-    \item Lecturer,  McGill University \hfill {May 2022 -- June 2022}
+\item IVADO Reseacher \hfill {Aug. 2024 - }
+\item Member of GERAD \hfill {Aug. 2024 - }
+\item Member of CIRRELT \hfill {Jun. 2024 - }
+        \item Assistant Professor, DIRO, Université de Montréal \hfill {Jul. 2023 - }
+        \item Postdoctoral Fellow (FRQNT, IVADO-funded position), McGill University \hfill {Jun. 2021 -- Jun. 2023}
+        \item Lecturer,  McGill University \hfill {May 2022 -- Jun. 2022}
     \item Researcher, ORT France, Paris \hfill {Summer 2015}
 \end{midlist}
 % IVADO Project: ``\textit{Data-driven demand learning and sharing strategies for two-sided online marketplaces}''\\
@@ -220,28 +208,25 @@ M.S., Economics
 
 
 \section{Selected Awards and Honors}
-\vspace{-5mm}
 \begin{midlist}
 \item Teaching Excellence Award, Association of Postdoctoral Fellows, McGill University \hfill{2022}
 \item Finalist for the ``\textit{Young Scholar Best Paper Award}'' at ISDG, Porto, Portugal \hfill{2022}
-\item GERAD Postdoctoral Fellowship   (\$30000) \hfill{2021 -- 2022}
+\item GERAD Postdoctoral Fellowship \hfill{2021 -- 2022} % (\$30000)
 
-\item FRQNT  Postdoctoral Research Scholarship (B3X)  (\$90000)  \hfill{2021 -- 2023}
+\item FRQNT  Postdoctoral Research Scholarship (B3X) \hfill{2021 -- 2023} % (\$90000)
 
-\item PBEEE  Quebec-India Doctoral Research Scholarship (\$45000)   \hfill{2019 -- 2021} 
-\item  FRQNT Doctoral Research Scholarship (B2X) (\$63000) \hfill{2019 -- 2021}  
-\item  FRQNT International Internship Program  (\$15000) \hfill{2018} 
-\item  Fondation J.A. DeS\`eve Bursary (PhD), HEC Montréal for academic excellence (\$11000)\hfill{2018}
+\item PBEEE  Quebec-India Doctoral Research Scholarship \hfill{2019 -- 2021} % (\$45000)
+\item  FRQNT Doctoral Research Scholarship (B2X) \hfill{2019 -- 2021} % (\$63000)
+\item  FRQNT International Internship Program \hfill{2018} % (\$15000)
+\item  Fondation J.A. DeS\`eve Bursary (PhD), HEC Montréal for academic excellence \hfill{2018} % (\$11000)
 % \item  J.A. DeS\`eve Admission Scholarship,  HEC Montr\'eal Foundation.  \hfill{2017 -- 2021}     
 % \item  Admission Scholarship, Chair of Game Theory and Management, GERAD \& HEC Montr\'eal. \hfill{2017 -- 2021}
-\item  Graduate Research Award (MHRD, India) to pursue Masters at IIT Kanpur  (\$2500)\hfill{2016} %
+\item  Graduate Research Award (MHRD, India) to pursue Masters at IIT Kanpur \hfill{2016} % (\$2500)
 % \item Merit-cum-Means Scholarship, IIT Kanpur  \begin{footnotesize}[\rupee180,000]\end{footnotesize} \hfill{2013, 2014, 2015} %
-\item Summer Research Scholarship, ORT France, Paris (\$3500) \hfill{2015} \\%
+\item Summer Research Scholarship, ORT France, Paris \hfill{2015} % (\$3500)
 %  \item Secured $3^{rd}$ position amongst 90 teams in Manthan National Youth Competition, India \hfill{2013}
 \end{midlist}
-\newpage 
 \section{Grants}
-\vspace{-5mm}
 \begin{midlist}
 \item Discovery Grant \hfill{2024-2029}\\
 Funding agency:  Natural Sciences and Engineering Research Council of Canada (NSERC)\\
@@ -271,115 +256,103 @@ Role: Principal Investigator
 
 \section{Journal Papers}
 \label{sec:pubs}
-\vspace{-6mm}
 \begin{enumerate}[label=\textbf{[J\arabic*]}]
+\item  \fullcite{sadana2024subsidizing}
+\vspace{2mm}
 \item \fullcite{sadana2025survey}
-\begin{midlist}
-    \item  \textbf{More than 240 citations}
-\end{midlist}
 \vspace{2mm}
 \item \fullcite{sadana2023value}
-    \begin{lonemidlist}
-    \item \textbf{Featured Article (30\% articles)}
-\end{lonemidlist}
 \vspace{2mm}
 \item \fullcite{sadana2023feedback}
-\begin{lonemidlist}
-   \item \textbf{Finalist}, Best Paper Award, International Symposium on Dynamic Games, Porto, 2022
-\end{lonemidlist}
 \vspace{2mm}
 \item \fullcite{sadana2021sampled}
 \item \fullcite{sadana2021nash}
 \end{enumerate}
-\newpage
 \section{Invited Newsletter Contributions}
-\vspace{-5mm}
 \begin{enumerate}[label=\textbf{[N\arabic*]}]
 \item \fullcite{sadana2024contextual}
 \end{enumerate}
 \section{Book Chapter}
-\vspace{-5mm}
 \begin{enumerate}[label=\textbf{[B\arabic*]}]
 \item \fullcite{rudnianski2016bayesian}
 \end{enumerate}
 \section{Under Review}
-\vspace{-5mm}
 \begin{enumerate}[label=\textbf{[P\arabic*]}]
 \item \fullcite{sadana2024mitigating}
-\item \fullcite{sadana2024subsidizing}
 \end{enumerate}
 
 \section{Talks and Seminars}
-\vspace{-3mm}
 \begin{lonemidlist}
+\item Banff International Research Station (BIRS) Workshop, Banff, Canada \hfill{2026}\\
+\textit{Mitigating optimistic bias in entropic risk estimation and optimization}
+\item INFORMS Annual Meeting (invited), Atlanta, USA \hfill{2025}\\
+\textit{Optimistic Bias in Data-Driven Risk Estimation and Optimization}
+\item IEMS Seminar (invited), Northwestern University, Evanston, USA \hfill{2025}\\
+\textit{Data-driven decision making under uncertainty with entropic risk measure}
 \item Stochastic Programming Society Virtual Seminar Series \hfill{2025}\\
-``\textit{Towards Decision-Focused Learning:
-Advances in Contextual Optimization}''\\
-\textbf{(\textbf{Invited Tutorial})}
+\textit{Towards Decision-Focused Learning: Advances in Contextual Optimization}\\
+\textbf{Invited tutorial}
 \item INFORMS Computing Society Conference (invited), Toronto, Canada \hfill{2025}\\
-``\textit{What's hidden in the tails? Revealing and reducing optimistic bias in entropic risk estimation}\\\textit{ and optimization}''
+\textit{What's hidden in the tails? Revealing and reducing optimistic bias in entropic risk estimation and optimization}
 \item Dynamic Games and Applications Seminar (invited), Montréal, Canada \hfill{2024}\\
-``\textit{Subsidizing a New Technology: An Impulse Stackelberg Game Approach}''
+\textit{Subsidizing a New Technology: An Impulse Stackelberg Game Approach}
 \item International Symposium on Mathematical Programming (invited), Montréal, Canada \hfill{2024}\\
-``\textit{Data-driven decision making under uncertainty with entropic risk measure}''
+\textit{Data-driven decision making under uncertainty with entropic risk measure}
 \item  International Symposium on Dynamic Games, Valladolid, Spain
 \hfill{2024}\\
-``\textit{Subsidizing a New Technology: An Impulse Stackelberg Game Approach}''
+\textit{Subsidizing a New Technology: An Impulse Stackelberg Game Approach}
 \item GERAD Seminar, Montréal, Canada \hfill{2024}\\
-``\textit{Nash Equilibria in Two-Player Differential Games with Impulse Control}''
+\textit{Nash Equilibria in Two-Player Differential Games with Impulse Control}
 % \item International Symposium on Dynamic Games and Applications,Montréal \hfill{2024}
 \item Workshop on Games and Optimization, Montréal, Canada
 \hfill{2024}\\
-``\textit{Feedback Nash equilibria in differential games with Impulse control}''
+\textit{Feedback Nash equilibria in differential games with Impulse control}
 \item Optimization Days, Montréal, Canada
 \hfill{2024}\\
-``\textit{Data-driven decision making under uncertainty with entropic risk measure}''
+\textit{Data-driven decision making under uncertainty with entropic risk measure}
 \item CORS Annual Conference/Optimization Days, Montréal, Canada
 \hfill{2023}\\
 \textit{A Review of Contextual Stochastic Optimization II: Integrated Learning and Optimization}
 \item Contextual optimization workshop, Montréal, Canada
 \hfill{2023}\\
-``\textit{A Review of Contextual Stochastic Optimization: Integrated Learning and Optimization}''
+\textit{A Review of Contextual Stochastic Optimization: Integrated Learning and Optimization}
 \item  DS4DM Coffee Talk, Montréal, Canada
 \hfill{2023}\\
-``\textit{The Value of Randomized Strategies in Distributionally Robust Risk-Averse\\ Network Interdiction
-Problems}''
+\textit{The Value of Randomized Strategies in Distributionally Robust Risk-Averse Network Interdiction Problems}
 \item  Meet a GERAD Researcher Seminar, Montréal, Canada \hfill{2023}\\
-``\textit{Nash Equilibria in Two-Player Differential Games with Impulse Control}''
+\textit{Nash Equilibria in Two-Player Differential Games with Impulse Control}
 \item  DIRO Seminar (invited), Université de Montréal, Canada \hfill{2023}\\
-``\textit{Decision making in dynamic multi-agent systems with limited resources}''
+\textit{Decision making in dynamic multi-agent systems with limited resources}
 \item  International Symposium on Dynamic Games, Porto, Portugal
 \hfill{2022}\\
-``\textit{Feedback Nash Equilibria in Differential games with Impulse Control}''
+\textit{Feedback Nash Equilibria in Differential games with Impulse Control}
 \item  CORS/INFORMS International Conference, Vancouver, Canada \hfill{2022}\\
-``\textit{Decision-focused Learning for a Newsvendor with Side Information}''
+\textit{Decision-focused Learning for a Newsvendor with Side Information}
 \item CORS Annual Conference  (virtual) \hfill{2021}\\
-``\textit{The value of randomized strategies in distributionally robust risk averse\\ network interdiction
-problems}''
+\textit{The value of randomized strategies in distributionally robust risk averse network interdiction problems}
 \item INFORMS Virtual Annual Meeting (invited) \hfill{2020}\\
-``\textit{The value of randomized strategies in distributionally robust risk averse\\ network interdiction
-problems}''
+\textit{The value of randomized strategies in distributionally robust risk averse network interdiction problems}
 \item Virtual Informal Systems Seminar (invited), McGill and GERAD, Montréal, Canada \hfill{2020}\\
-``\textit{Open-loop Nash equilibria in nonzero-sum differential games with impulse controls}''
+\textit{Open-loop Nash equilibria in nonzero-sum differential games with impulse controls}
 \item Workshop on Differential Games, Stony Brook Center for Game Theory (invited), NY, USA. \hfill{2020}\\
-``\textit{Open-loop Nash equilibria in differential games with impulse controls}''
+\textit{Open-loop Nash equilibria in differential games with impulse controls}
 \item  CRC - Decision Making Under Uncertainty Seminar Series (virtual) \hfill{2020}\\
-``\textit{The value of randomized strategies in distributionally robust risk averse\\ network interdiction
-problems}''
+\textit{The value of randomized strategies in distributionally robust risk averse network interdiction problems}
 \item  11th Workshop on Dynamic Games in Management Science, Montr\'eal, Canada \hfill{2019}\\
-''\textit{Nash Equilibria in Non-Zero-Sum Differential Games with Impulse Control}''
+\textit{Nash Equilibria in Non-Zero-Sum Differential Games with Impulse Control}
 \item Optimization Days, Montr\'eal, Canada \hfill{2019}\\
-``\textit{Is it time to intervene? An impulse control approach to dynamic games}''\\
+\textit{Is it time to intervene? An impulse control approach to dynamic games}\\
 \end{lonemidlist}
 
 \vspace{1mm}
 \section{Courses Taught}
 \vspace{-3mm}
 \begin{lonemidlist}
-\item IFT-6575 Methods of Operations Research, Université de Montréal \hfill{Fall 2024}\\
+\item IFT-2505 Optimisation Linéaire, Université de Montréal \hfill{Winter 2026, Fall 2026}\\
 Instructor
-
-\item IFT-6521 Dynamic Programming, Université de Montréal \hfill{Winter 2024, 2025}\\
+\item IFT-6575 Methods of Operations Research, Université de Montréal \hfill{Fall 2024, Fall 2025, Fall 2026}\\
+Instructor
+\item IFT-6521 Dynamic Programming, Université de Montréal \hfill{Winter 2024, Winter 2025, Winter 2026}\\
 Instructor
 \item MGCR-271: Business Statistics, McGill University \hfill{Summer 2022}\\
 Instructor\\
@@ -390,8 +363,6 @@ Instructor\\
 \begin{midlist}
 \item Maël Charpentier, Master's student, Université de Montréal, Canada \hfill{Fall 2024 -}\\
 co-supervised with Prof.~Margarida Carvalho
-% \item Mamadou Saliou Diallo, PhD student, Université de Montréal, Canada \hfill{Fall 2024 -}\\
-% co-supervised with Prof.~Georges Zaccour
 \item Gabriel-Fortin Leblanc, PhD student, Université de Montréal, Canada \hfill{Fall 2024 -}\\
 co-supervised with Prof.~Emma Frejinger
 \item Julien-Charles Cyr, Master's student, Université de Montréal, Canada \hfill{Winter 2024 -}
@@ -404,10 +375,7 @@ co-supervised with Prof.~Georges Zaccour
 \section{Event Organization}
 \vspace{-3mm}
 \begin{midlist}
-\item {Lead organizer}, 5 day Workshop: \textit{Contextual Stochastic Optimization: From Data to Decisions}, Banff International Research Station, Alberta, Canada \hfill  2026
-\begin{itemize}[leftmargin=1.5em]
-    \item 40 experts on AI-driven decision-making have expressed interest in participating.
-\end{itemize}
+\item {Lead organizer}, 5 day Workshop: \textit{Contextual Stochastic Optimization: From Data to Decisions}, Banff International Research Station, Alberta, Canada \hfill{2026}
 \item Co-chair, Cluster: \textit{Data-driven decision making}, Canadian Operations Research Society conference (CORS), Edmonton \hfill{2025}
 \item Co-organizer, CRM Workshop on Data Science and Combinatorial Optimization, Montréal \hfill{2025}
 \item Session chair, CORS/INFORMS International Conference, Vancouver \hfill{2022}
@@ -455,24 +423,21 @@ une planification efficace à long terme,  Polytechnique Montréal \hfill{2024}
 \end{midlist}
 
 \section{Personal}
+\\
 {Citizenship}: India\\
-{Languages}: Hindi (native), English (fluent), French (lower intermediate)
+{Languages}: Hindi (native), English (fluent), French 
 \\
 % \textbf{Hobbies}: Poetry, Tennis, Badminton, Board Games
 \end{document}
 % \section{Social Initiatives \& Mentorship}
- % \textbf{Workshop, Mathematics and Statistics Help Center, HEC Montréal} \hfill{Apr. 2019 -- May 2019}
- % \begin{midlist}
- % \item Prepared content (lecture notes, handouts, and slides that covered basics of linear algebra and probability theory) for conducting a workshop to help  the incoming  Master's students, in the field of economics, finance, and quantitative methods in management.\\
- % \end{midlist}
-
- % \textbf{Inclusive Development of Informal Sector Workers}  \hfill{May 2013 -- Oct. 2013}\\
- % Team Project, Citizens for Accountable Governance (CAG)
- % \begin{midlist}
- % \item Proposed structural layout for registration and grievance redressal of Informal Sector workers.
- % \end{midlist}
+{\LARGE\bfseries Utsav Sadana\par}
+\vspace{0.12em}
+{\large Assistant Professor\par}
+\vspace{0.28em}
+{\color{cvaccent}\rule{0.58\textwidth}{0.9pt}\par}
+{\small\color{cvmuted}Last updated: \today\par}
  % \vspace{0.2cm}
-
+\vspace{0.18em}
 % \textbf{Instructor, Hindi Learning Classes}  \hfill{\emph{[Feb'14 - Mar'14]}}\\
 % Hindi Literary Society, IIT Kanpur
 % \begin{innerlist}
