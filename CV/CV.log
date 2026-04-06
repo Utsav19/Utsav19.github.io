@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=pdflatex 2025.3.8)  5 APR 2026 19:14
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=pdflatex 2025.3.8)  5 APR 2026 19:52
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -918,15 +918,15 @@ Package logreq Info: Writing requests to 'CV.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 27032 strings out of 473190
- 496904 string characters out of 5715801
- 1473263 words of memory out of 5000000
- 49896 multiletter control sequences out of 15000+600000
+ 27030 strings out of 473190
+ 496864 string characters out of 5715801
+ 1473248 words of memory out of 5000000
+ 49894 multiletter control sequences out of 15000+600000
  601704 words of font info for 99 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  69i,14n,117p,1049b,5183s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/local/texlive/2025/texmf-dist/fonts/type1/public/fontawesome5/FontAwesome5Brands-Regular.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/fontawesome5/FontAwesome5Free-Solid.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmbx12.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmr10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmr12.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmri12.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmtt12.pfb>
-Output written on CV.pdf (6 pages, 198362 bytes).
+Output written on CV.pdf (6 pages, 198134 bytes).
 PDF statistics:
  101 PDF objects out of 1000 (max. 8388607)
  75 compressed objects within 1 object stream
