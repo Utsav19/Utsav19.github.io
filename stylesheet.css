@@ -1,5 +1,4 @@
 /* CSS Document */
-@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:wght@400;500;600;700;800&display=swap');
 a {
   color: #0055aa;
   text-decoration: none;
@@ -13,7 +12,7 @@ a:hover {
 html, body { margin: 0; padding: 0; }
 
 body, td, th, tr, p{
-  font-family: 'Titillium Web', Verdana, Helvetica, sans-serif;
+  font-family: Calibri, Arial, Helvetica, sans-serif;
   font-size: 16px;
   font-weight: 500;
   line-height: 1.45;
@@ -24,19 +23,19 @@ body, td, th, tr, p{
 td { padding: 12px !important; }
 
 strong {
-  font-family: 'Titillium Web', Verdana, Helvetica, sans-serif;
+  font-family: Calibri, Arial, Helvetica, sans-serif;
   font-size: 16px;
   font-weight: 700;
 }
 
 heading {
-  font-family: 'Titillium Web', Verdana, Helvetica, sans-serif;
+  font-family: Calibri, Arial, Helvetica, sans-serif;
   font-size: 22px;
   font-weight: 700;
 }
 
 papertitle{
-  font-family: 'Titillium Web', Verdana, Helvetica, sans-serif;
+  font-family: Calibri, Arial, Helvetica, sans-serif;
   font-size: 16px;      /* was 18px */
   font-weight: 500;
   line-height: 1.25;
@@ -50,7 +49,7 @@ a papertitle {
 
 
 name {
-  font-family: 'Titillium Web', Verdana, Helvetica, sans-serif;
+  font-family: Calibri, Arial, Helvetica, sans-serif;
   font-size: 32px;
   font-weight: 700;
 }
