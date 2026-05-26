@@ -20,7 +20,7 @@ Related reading:
 - [Solving two-stage programs with endogenous uncertainty via random variable transformation](https://doi.org/10.1287/ijoc.2024.0847), by Maria Bazotte, Margarida Carvalho, and Thibaut Vidal.
 - [Trained random forests completely reveal your dataset](https://proceedings.mlr.press/v235/ferry24a.html), by Julien Ferry, Ricardo Fukasawa, Timothee Pascal, and Thibaut Vidal.
 
-Interested candidates should email [Thibaut Vidal](mailto:thibaut.vidal@polymtl.ca),  [Margarida Carvalho](mailto:carvalho@iro.umontreal.ca), and [Utsav Sadana](mailto:utsav.sadana@umontreal.ca), with the subject line `PhD application - Responsible Decision-Focused Learning` and include:
+Interested candidates should email [Thibaut Vidal](mailto:thibaut.vidal@polymtl.ca),  [Margarida Carvalho](mailto:carvalho@iro.umontreal.ca), and [Utsav Sadana](mailto:utsav.sadana@umontreal.ca), with the subject line PhD application - Responsible Decision-Focused Learning and include:
 
 - a CV;
 - transcripts, if available;
@@ -29,3 +29,5 @@ Interested candidates should email [Thibaut Vidal](mailto:thibaut.vidal@polymtl.
 - contact information for references.
 
 Applications will be reviewed on a rolling basis. We especially encourage applications from students who are excited about building decision-making methods that are technically rigorous, computationally useful, and responsible in deployment.
+
+We are committed to an inclusive research environment and welcome applications from candidates of all backgrounds, including members of groups that are underrepresented in mathematics, computer science, operations research, and engineering.
