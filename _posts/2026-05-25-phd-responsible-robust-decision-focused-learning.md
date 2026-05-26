@@ -14,7 +14,7 @@ The student will be part of a collaborative research environment across Universi
 
 Strong applicants should have a solid mathematical background and good programming skills. Prior exposure to optimization, machine learning, probability, or algorithms is valuable. A master's degree is helpful but not strictly required for exceptional candidates.
 
-Interested candidates should email us with the subject line `PhD application - Responsible Decision-Focused Learning` and include:
+Interested candidates should email Utsav Sadana (`utsav dot sadana at umontreal dot ca`), Margarida Carvalho (`margarida dot carvalho at iro dot umontreal dot ca`), and Thibaut Vidal (`thibaut dot vidal at polymtl dot ca`) with the subject line `PhD application - Responsible Decision-Focused Learning` and include:
 
 - a CV;
 - transcripts, if available;
