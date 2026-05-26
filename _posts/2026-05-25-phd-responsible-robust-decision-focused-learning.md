@@ -10,11 +10,17 @@ We are recruiting a PhD student to work on responsible and robust decision-focus
 
 The position is well suited for a student interested in the intersection of operations research, machine learning, stochastic optimization, bilevel optimization, and game theory. Possible research directions include interpretable decision policies, scalable prediction-and-optimization pipelines, and robust learning methods for settings where data may be noisy, strategically manipulated, or privacy-sensitive.
 
-The student will be part of a collaborative research environment across Universite de Montreal, Polytechnique Montreal, GERAD, CIRRELT, and Mila. The project will also connect to applications in energy, transportation, and supply chains, where reliable and auditable decision-support systems are increasingly important.
+The student will be part of a collaborative research environment across Universite de Montreal, Polytechnique Montreal, GERAD, CIRRELT, and Mila. The project will also connect to applications in energy, transportation, and supply chains, where reliable  decision-support systems are increasingly important.
 
 Strong applicants should have a solid mathematical background and good programming skills. Prior exposure to optimization, machine learning, probability, or algorithms is valuable. A master's degree is helpful but not strictly required for exceptional candidates.
 
-Interested candidates should email Utsav Sadana (`utsav dot sadana at umontreal dot ca`), Margarida Carvalho (`margarida dot carvalho at iro dot umontreal dot ca`), and Thibaut Vidal (`thibaut dot vidal at polymtl dot ca`) with the subject line `PhD application - Responsible Decision-Focused Learning` and include:
+Related reading:
+
+- [A survey of contextual optimization methods for decision-making under uncertainty](https://doi.org/10.1016/j.ejor.2024.03.020), by Utsav Sadana, Abhilash Chenreddy, Erick Delage, Alexandre Forel, Emma Frejinger, and Thibaut Vidal.
+- [Solving two-stage programs with endogenous uncertainty via random variable transformation](https://doi.org/10.1287/ijoc.2024.0847), by Maria Bazotte, Margarida Carvalho, and Thibaut Vidal.
+- [Trained random forests completely reveal your dataset](https://proceedings.mlr.press/v235/ferry24a.html), by Julien Ferry, Ricardo Fukasawa, Timothee Pascal, and Thibaut Vidal.
+
+Interested candidates should email [Utsav Sadana](mailto:utsav.sadana@umontreal.ca), [Margarida Carvalho](mailto:carvalho@iro.umontreal.ca), and [Thibaut Vidal](mailto:thibaut.vidal@polymtl.ca) with the subject line `PhD application - Responsible Decision-Focused Learning` and include:
 
 - a CV;
 - transcripts, if available;
