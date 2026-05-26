@@ -1,12 +1,14 @@
 ---
 layout: post
 title: "Postdoc / Researcher — Robust & Responsible Decision-Focused Learning"
-date: 2026-05-25
+date: 2026-05-25 12:00:00 +0000
 categories: [positions, research]
+permalink: /blog/position-robust-responsible-decision-learning.html
 ---
 
-<p><strong>Location:</strong> Remote / [Your institution] (negotiable)</p>
-<p><strong>Type:</strong> Postdoctoral researcher or research engineer (full-time, 12–36 months)</p>
+**Location:** Remote / [Your institution] (negotiable)
+
+**Type:** Postdoctoral researcher or research engineer (full-time, 12–36 months)
 
 ## Overview
 
@@ -45,6 +47,4 @@ Applications will be reviewed on a rolling basis; early submissions are encourag
 
 We encourage applicants from underrepresented groups and value diverse perspectives. Reasonable accommodations are available upon request.
 
----
-
-If you'd like, I can shorten this, add host institution details, or convert it to a Jekyll post under `_posts/` with a dated filename.
+If you'd like, I can shorten this, add host institution details, or adjust the permalink.
