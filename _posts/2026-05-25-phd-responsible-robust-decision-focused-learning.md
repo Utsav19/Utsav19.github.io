@@ -1,9 +1,9 @@
 ---
 layout: post
 title: "PhD Position: Responsible and Robust Decision-Focused Learning"
-date: 2026-05-25 12:00:00 +0000
+date: 2026-05-25 12:00:00 -0400
 categories: [positions, research]
-permalink: /blog/phd-responsible-robust-decision-focused-learning.html
+permalink: /blog/phd-responsible-robust-decision-focused-learning/
 ---
 
 I am recruiting a PhD student to work on responsible and robust decision-focused learning, in collaboration with Thibaut Vidal and Margarida Carvalho. The project will study machine learning systems that are trained not only to make accurate predictions, but also to support high-quality downstream decisions in optimization problems.

@@ -1,14 +1,18 @@
+---
+layout: default
+title: Blog
+---
 
-<!DOCTYPE html>
-<html lang="en">
-<head>
-	<meta charset="utf-8">
-	<title>Blog</title>
-</head>
-<body>
+<main style="max-width: 760px; margin: 40px auto; padding: 0 20px;">
+	<p><a href="../index.html">Back to home</a></p>
 	<h1>Blog</h1>
+
 	<ul>
-		<li><a href="phd-responsible-robust-decision-focused-learning.html">PhD Position: Responsible and Robust Decision-Focused Learning</a> - 2026-05-25</li>
+		{% for post in site.posts %}
+		<li>
+			<a href="{{ post.url | relative_url }}">{{ post.title }}</a>
+			- {{ post.date | date: "%Y-%m-%d" }}
+		</li>
+		{% endfor %}
 	</ul>
-</body>
-</html>
+</main>

@@ -1,9 +1,13 @@
 ---
 layout: default
 ---
+<main style="max-width: 760px; margin: 40px auto; padding: 0 20px;">
+<p><a href="{{ '/blog/' | relative_url }}">Back to blog</a></p>
+
 <h1>{{ page.title }}</h1>
-<p class="meta">{{ page.date | date_to_string }}</p>
+<p class="meta">{{ page.date | date: "%B %-d, %Y" }}</p>
 
 <div class="post">
   {{ content }}
 </div>
+</main>
