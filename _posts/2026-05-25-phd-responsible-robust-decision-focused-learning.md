@@ -6,7 +6,7 @@ categories: [positions, research]
 permalink: /blog/phd-responsible-robust-decision-focused-learning/
 ---
 
-We are recruiting a PhD student to work on responsible and robust decision-focused learning. The project will study machine learning systems that are trained not only to make accurate predictions, but also to support high-quality downstream decisions in optimization problems.
+We are recruiting a PhD student to work on responsible and robust decision-focused learning. The project will develop machine learning models that are trained not only to make accurate predictions, but also to support high-quality downstream decisions in optimization problems.
 
 The position is well suited for a student interested in the intersection of operations research, machine learning, stochastic optimization, bilevel optimization, and game theory. Possible research directions include interpretable decision policies, scalable prediction-and-optimization pipelines, and robust learning methods for settings where data may be noisy, strategically manipulated, or privacy-sensitive.
 
@@ -28,6 +28,4 @@ Interested candidates should email [Thibaut Vidal](mailto:thibaut.vidal@polymtl.
 - links to papers, code, or projects, if available;
 - contact information for references.
 
-Applications will be reviewed on a rolling basis. We especially encourage applications from students who are excited about building decision-making methods that are technically rigorous, computationally useful, and responsible in deployment.
-
-We are committed to an inclusive research environment and welcome applications from candidates of all backgrounds, including members of groups that are underrepresented in mathematics, computer science, operations research, and engineering.
+Applications will be reviewed on a rolling basis. We are committed to an inclusive research environment and encourage applications from candidates of all backgrounds, including members of groups that are underrepresented in mathematics, computer science, operations research, and engineering.
